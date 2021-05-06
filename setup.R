@@ -30,3 +30,6 @@ check_hugo()
 navigateToFile("content/authors/admin/_index.md")
 # Changes to active widgets
 navigateToFile("content/home/accomplishments.md")
+
+stop_server()
+serve_site()
