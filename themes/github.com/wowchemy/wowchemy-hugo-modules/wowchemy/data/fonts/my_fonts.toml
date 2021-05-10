@@ -1,0 +1,11 @@
+# Font style metadata
+name = "my_fonts"
+
+# Optional Google font URL
+google_fonts = "family=Montserrat:wght@400;700&family=Libre+Franklin&family=Libre+Franklin:wght@400;700"
+
+# Font families
+heading_font = "Montserrat"
+body_font = "Libre Franklin"
+nav_font = "Libre Franklin"
+mono_font = "Libre Franklin"

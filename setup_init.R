@@ -26,6 +26,8 @@ check_content()
 check_netlify()
 check_hugo()
 
+# Rstudio API links
+
 # Change to author/bio section
 navigateToFile("content/authors/admin/_index.md")
 # Changes to active widgets
