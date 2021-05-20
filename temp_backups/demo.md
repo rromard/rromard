@@ -4,7 +4,7 @@
 widget: blank
 
 # Activate this widget? true/false
-active: true
+active: false
 
 # This file represents a page section.
 headless: true
@@ -28,7 +28,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ![](/media/hero_line.png#floatleft) **LITTLE SUBTITLE FOR THE CTA SECTION**  
-   
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.   
+
 {{< cta cta_text="Sign up here" cta_link="/" cta_new_tab="false" >}}
   
 

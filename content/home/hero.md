@@ -3,26 +3,25 @@ widget: hero
 active: false
 headless: true
 weight: 10
-title: Hugo Academic Starter
-hero_media: hero-academic.png
+hero_media: hero_line.svg
 cta:
-  label: '**Get Started**'
-  url: https://wowchemy.com/templates/
+  label: '**Find out more**'
+  url: /about
 cta_alt:
   label: Ask a question
-  url: https://discord.gg/z8wNYzb
+  url: /contact
 cta_note:
-  label: >-
-    <a class="js-github-release" href="https://wowchemy.com/updates/" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a><div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/wowchemy-hugo-modules" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star Wowchemy site builder for Hugo</a></div><div style="text-shadow: none;"><a class="github-button" href="https://github.com/wowchemy/starter-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star">Star the Academic template</a></div>
 design:
-  background:
-    gradient_end: '#1976d2'
-    gradient_start: '#004ba0'
-    text_color_light: true
+  flip: TRUE
+  spacing:
+    # Customize the section spacing. Order is top, right, bottom, left.
+    padding: ["20px", "0", "5px", "0"]
 advanced:
   css_class: fullscreen
 ---
 
-**The FREE, Hugo-based open source website builder and template trusted by 500,000+ sites.**
+### Big line one
 
-**Build anything with widgets** - from landing pages, knowledge bases, and courses to academic resumés, conferences, and tech blogs.
+Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+
+

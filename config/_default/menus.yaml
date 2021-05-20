@@ -7,15 +7,12 @@ main:
   - name: Posts
     url: '#posts'
     weight: 10
-  - name: Projects
-    url: '/project'
+  - name: Learning
+    url: '/courses'
     weight: 20
   - name: Gallery
-    url: '#gallery'
+    url: '/gallery'
     weight: 30
   - name: About
     url: '/about'
-    weight: 50
-  - name: Contact
-    url: '/contact'
-    weight: 50
+    weight: 40

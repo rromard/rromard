@@ -1,0 +1,32 @@
+section#demo div.container{
+max-width:90%;
+}
+
+img[src$='#floatleft']
+{
+	float:left;
+    align:left; 
+    margin: 0px 15px 15px 0px; 
+    max-width: 75%;
+	height: auto;
+}
+
+ol.source-text {
+	list-style-position: inside;
+	text-indent: -2em;
+	font-size:medium
+}
+
+.demo-media {
+    display: flex;
+    align-items: flex-start;
+	flex-direction: column;
+}
+.demo-media .content {
+    flex: 1;
+    padding: 10px;
+}
+
+.demo-media .image {
+  flex: 1;
+}

@@ -1,0 +1,82 @@
+---
+title: 'CEWS: A scandalous gift to capital'
+author: Ryan Romard
+date: '2021-05-15'
+slug: cews-a-scandalous-gift-to-capital
+categories: []
+tags: []
+subtitle: "The Liberal Government's flagship pandemic response program is a corporate give-away of unprecedented scale"
+summary: ''
+authors: []
+lastmod: '2021-05-15T03:37:53-04:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: yes
+projects: []
+---
+
+```{r, include = FALSE}
+library(here)
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+To the capitalist class, a crisis that isn't used to enhance profits and power, is a crisis wasted. Restoration and reorganization through crisis is a fundamental principle of capitalism[^1]. The practice of disaster capitalism, where both natural and human-made disasters are used by the ruling classes to leverage anti-social, pro-corporate, profit-boosting agendas, has already been well documented. The COVID-19 Pandemic exemplifies this capitalist response to crisis to the extreme. 
+
+The Canada Emergency Wage Subsidy (CEWS) is a program that uses public funds to pay a portion of worker's wages (up to 75%) at any business that experiences a pandemic-related drop in revenue. The Office of the Auditor General described the CEWS as one of the "largest initiatives the government has ever undertaken and one of the key programs" of the Trudeau Government's pandemic recovery plan [^2]. To date, there have been little oversight and few stipulations attached to the funds. The Liberal government have offered only vague and non-committal utterances that misuse of the subsidies will be punished *some day*.  
+
+```{r}
+knitr::include_graphics('/img/p1_cews/covid_total_profit_bar.svg', error = FALSE)
+```
+
+There can be no doubt that the CEWS played a major role in propping up corporate profits during a crisis of historic proportions. The total value of wage subsidy payouts in 2020 were equal to **67% of after-tax profits** of all non-financial corporations. Unsurprisingly, as a direct subsidy to capitalist's profit margins, the CEWS amounted to a massive transfer of wealth from the public to the capitalist ruling class. This outcome is entirely predictable by anyone with even a basic understanding of capitalism: **(1)** capitalists always desire higher short-term profits and **(2)** they implicitly understand that, all else being equal, a dollar less in wages is a dollar more for profits. This outcome is not an accident, of course, since it was declared, rather euphemistically, as a primary goal of the program: to "protect jobs and **promote growth.**"[^3]
+
+### The big picture: Examining the CEWS at the sector level
+
+StatCan produces summary data on approved CEWS claims at the industry level, as defined by the North American Industry Classification System. By combining that data with the most recent data from the Quarterly Survey of Financial Statements, it's possible to get a bigger picture view of the distribution of subsidies at the industry-wide level. Some of the figures are astounding. The construction industry took in 52% of their after-tax profits worth of CEWS, while breaking the all time record high for profits. Despite posting profits of over \$30B, the manufacturing sector took in over \$10B in wage subsidies. In the wholesale sector, dominated by large corporate employers, companies received over \$8.7B in CEWS and enjoyed their second most profitable year ever. The administration and building support industry, a bastion of low-wage and precarious labour, made $5.89B in profits and absorbed almost as much as their profits (92%) in wage subsidies.  
+
+```{r}
+knitr::include_graphics('/img/p1_cews/covid_profit_bar.svg', error = FALSE)
+```
+
+### Detailed data reveals extensive corporate plunder of public funds
+
+Detailed, company-level data has thus far been kept secret by the Liberal government. However, companies registering for political lobbying activities must report government funds received in the past year, so there is *some* public data available on corporate CEWS recipients. In the lobbying registry, companies must disclose receiving funds from either the CEWS program specifically or from the Canada Revenue Agency, without specifying CEWS. The top 50 for-profit recipients in the lobbyist registry reported taking $2.67 billion in subsidies from the Canada Revenue Agency during the first year of the pandemic. This list represents many of Canada's major corporate players, most of which continued to issue massive dividend payouts to shareholders while cutting their wage bill with CEWS.
+
+Below are the top 15 companies in the registry by the amount of wage subsidies relieved in 2020. Air Canada got a bonus-bailout in the form of over half a billion dollars in wage subsidies, despite laying-off over 20,000 workers. The extent to which Canada's major fossil fuel corporations have taken advantage of CEWS is truly outrageous, with Suncor Energy alone soaking up about a third of a billion dollars from the Canada Revenue Agency. Overall, the top fossil fuel companies in the registry raked in over a billion dollars, while paying out huge dividends to shareholders. Canada's top auto manufacturers took in just under \$400 million and despite already healthy profitability, the telecom monopoly corporations were well rewarded with subsidies of \$244 million. 
+
+```{r}
+knitr::include_graphics('/img/p1_cews/covid_profit_textbar.svg', error = FALSE)
+```
+
+The socioeconomic impacts of the COVID-crisis will likely last for years. It almost goes without saying that we should fight for more genuine and lasting supports for workers and vulnerable populations. Imagine the sheer absurdity of a socio-economic system that, during a global pandemic, invests \$80B to $100B in padding the profits of capitalists instead of in needed services like healthcare or revitalizing the EI system.  
+
+##### Data Sources
+
+<ul class="source-text">
+<li>Office of the Comissioner of Lobbying of Canada. Registry of Lobbyists.  12- month data extract done in May, 2021.</li>
+<li>StatCan. CEWS Detailed Data, Table 2a. "Approved CEWS claims by period and industry sector, Canada." Accessed April 2021.</li>
+<li>StatCan. Table 33-10-0226-01. "Quarterly balance sheet and income statement, by industry, seasonally adjusted.' Accessed April 2021</li>
+<li>StatCan. Table 33-10-0160-01. "Historical (real-time) releases of quarterly balance sheet and income statement items, by industry". Accessed April 2021.</li>
+</ul>
+
+<div class="bottom-panel" id="bottom-panel">
+    <div class="popup-wrapper" id="popup-wrapper"></div> 
+</div> 
+<script src="./footnotes.js"></script>
+
+[^1]: Continued growth of capitalism requires the regular destruction and consolidation of capital by the way of cyclical recessionary crises. An unprofitable factory belonging to a failing company, for example, might turn a profit once more if purchased by a rival firm at a substantial discount. 
+
+[^2]: https://www.oag-bvg.gc.ca/internet/English/mr_20210325_e_43792.html
+
+[^3]: https://www.canada.ca/en/department-finance/news/2020/07/adapting-the-canada-emergency-wage-subsidy-to-protect-jobs-and-promote-growth.html
+
+<div id="commento"></div>
+<script defer
+  src="https://cdn.commento.io/js/commento.js"
+  data-css-override="http://ds4cs.netlify.app/assets/scss/commento.scss"
+  data-auto-init="true">>
+</script>
+
+

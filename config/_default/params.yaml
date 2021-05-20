@@ -16,24 +16,24 @@ site_type: Person
 local_business_type: ''
 org_name: ''
 description: ''
-twitter: ''
+twitter: 'https://twitter.com/red_ry'
 
 # Contact (edit or remove options as required)
 
-email: rromard@gmail.com
-contact_links:
-  - icon: twitter
-    icon_pack: fab
-    name: DM Me
-    link: 'https://twitter.com/red_ry'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+# email: 
+# contact_links:
+#   - icon: twitter
+#     icon_pack: fab
+#     name: DM Me
+#     link: 'https://twitter.com/red_ry'
+#   - icon: keybase
+#     icon_pack: fab
+#     name: Chat on Keybase
+#     link: 'https://keybase.io/'
+#   - icon: comments
+#     icon_pack: fas
+#     name: Discuss on Forum
+#     link: 'https://discourse.gohugo.io'
 
 # Site header
 
@@ -103,7 +103,7 @@ breadcrumb:
   page_types:
     book: true
 comments:
-  provider: ''
+  provider: 'commento'
   commentable:
     post: true
     book: true
@@ -114,7 +114,7 @@ comments:
     shortname: ''
     show_count: true
   commento:
-    url: ''
+    url: 'ds4cs'
 search:
   provider: wowchemy
   algolia:
