@@ -15,8 +15,8 @@ font_size: L
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: ''
-twitter: 'https://twitter.com/red_ry'
+description: 'Socialist data science blog featuring data driven analysis of capitalism, data visualization based stories, and data science learning materials for the left'
+twitter: 'https://twitter.com/DataStruggle'
 
 # Contact (edit or remove options as required)
 
@@ -114,7 +114,7 @@ comments:
     shortname: ''
     show_count: true
   commento:
-    url: 'ds4cs'
+    url: ''
 search:
   provider: wowchemy
   algolia:

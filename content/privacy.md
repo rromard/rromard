@@ -10,4 +10,4 @@ share: false
 title: Privacy Policy
 ---
 
-...
+This website is built using the Wowchemy Hugo Academic template, with the additional privacy pack enabled. 

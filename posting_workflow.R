@@ -12,7 +12,7 @@ blogdown::check_site()
 serve_site()
 
 # Post 1: CEWS: A scandalous gift to capital; 15-05-2021
-blogdown::new_post(title = "Canada Emergency Wage Subsidy: a scandalous gift to capital", 
+blogdown::new_post(title = "Canada Emergency Wage Subsidy: A scandalous gift to capital", 
                    ext = '.Rmarkdown', 
                    subdir = "post")
 

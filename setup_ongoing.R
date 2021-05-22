@@ -26,7 +26,6 @@ navigateToFile("date/page_sharer.toml")
 
 ## Comments
 
-# Comments with utterances
 navigateToFile("layouts/partials/comments.html")
 
 ## Home page
@@ -56,7 +55,6 @@ navigateToFile("content/contact/contact.md")
 
 # Gallery
 navigateToFile("content/gallery/index.md")
-navigateToFile("content/project/project.md")
 
 # Posts
 navigateToFile("content/post/_index.md")
