@@ -70,9 +70,7 @@ The socioeconomic impacts of the COVID-crisis will likely last for years. It alm
 
 <div id="commento"></div>
 <script defer
-  src="https://cdn.commento.io/js/commento.js"
-  data-css-override="http://ds4cs.netlify.app/assets/scss/commento.scss"
-  data-auto-init="true">>
+  src="https://cdn.commento.io/js/commento.js">>
 </script>
 
 

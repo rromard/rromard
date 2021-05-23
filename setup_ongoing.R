@@ -42,6 +42,8 @@ navigateToFile("content/home/hero.md")
 navigateToFile("content/home/posts.md")
 # Projects
 navigateToFile("content/home/projects.md")
+# Privacy
+navigateToFile("content/privacy.md")
 
 ## Widget pages
 

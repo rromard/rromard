@@ -39,10 +39,7 @@ Detailed, company-level data has thus far been kept secret by the Liberal govern
 
 Below are the top 15 companies in the registry by the amount of wage subsidies relieved in 2020. Air Canada got a bonus-bailout in the form of over half a billion dollars in wage subsidies, despite laying-off over 20,000 workers. The extent to which Canada's major fossil fuel corporations have taken advantage of CEWS is truly outrageous, with Suncor Energy alone soaking up about a third of a billion dollars from the Canada Revenue Agency. Overall, the top fossil fuel companies in the registry raked in over a **billion dollars** in subsidies, while paying out huge dividends to shareholders. Canada's top auto manufacturers took in just under \$400 million and despite already healthy profitability, the telecom monopoly corporations were well rewarded with subsidies of \$244 million. 
 
-<div class="figure">
-<img src="covid_profit_textbar.svg" alt="Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest"  />
-<p class="caption">Figure 1: Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest</p>
-</div>
+<img src="covid_profit_textbar.svg" title="Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest" alt="Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest"  />
 
 The socioeconomic impacts of the COVID-crisis will likely last for years. It almost goes without saying that we should fight for more genuine and lasting supports for workers and vulnerable populations. Imagine the sheer absurdity of a socio-economic system that, during a global pandemic, invests \$80B to $100B in padding the profits of capitalists instead of in needed services like healthcare or revitalizing the EI system.  
 
@@ -59,9 +56,7 @@ The socioeconomic impacts of the COVID-crisis will likely last for years. It alm
 
 <div id="commento"></div>
 <script defer
-  src="https://cdn.commento.io/js/commento.js"
-  data-css-override="http://ds4cs.netlify.app/assets/scss/commento.scss"
-  data-auto-init="true">>
+  src="https://cdn.commento.io/js/commento.js">>
 </script>
 
 
