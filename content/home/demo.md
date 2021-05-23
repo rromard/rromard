@@ -34,6 +34,6 @@ At the outset of the 2020s, the theory and practice of using data science for pu
   <div class = "demo-media__text">
   <h6> Subscribe to be notified of updates </h6>
   <p> Click the button below to sign up for email updates when new stories or resources are released. My mailing list is powered by Buttondown, a light weight and privacy friendly newsletter service. </p>
-  {{< cta cta_text="Join with email" cta_link="https://buttondown.email/ds4cs" cta_new_tab="true" cta_alt_text="Visit my Medium page" cta_alt_link="https://medium.com/@rromard" cta_alt_new_tab="true">}}</div>
+  {{< cta cta_text="Join with email" cta_link="https://buttondown.email/ds4cs" cta_new_tab="true" cta_alt_text="Visit my Medium page" cta_alt_link="https://medium.com/@ds4cs" cta_alt_new_tab="true">}}</div>
 </div>
 

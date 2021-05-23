@@ -51,7 +51,7 @@ Detailed, company-level data has thus far been kept secret by the Liberal govern
 
 Below are the top 15 companies in the registry by the amount of wage subsidies relieved in 2020. Air Canada got a bonus-bailout in the form of over half a billion dollars in wage subsidies, despite laying-off over 20,000 workers. The extent to which Canada's major fossil fuel corporations have taken advantage of CEWS is truly outrageous, with Suncor Energy alone soaking up about a third of a billion dollars from the Canada Revenue Agency. Overall, the top fossil fuel companies in the registry raked in over a **billion dollars** in subsidies, while paying out huge dividends to shareholders. Canada's top auto manufacturers took in just under \$400 million and despite already healthy profitability, the telecom monopoly corporations were well rewarded with subsidies of \$244 million. 
 
-```{r fig.cap=alt_text3}
+```{r fig.alt=alt_text3}
 knitr::include_graphics('covid_profit_textbar.svg', error = FALSE)
 ```
 

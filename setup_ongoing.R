@@ -13,7 +13,7 @@ rstudioapi::navigateToFile("config.yaml", line = 3)
 
 # Main config file
 navigateToFile("config.yaml")
-# Authors
+ # Author bio
 navigateToFile("content/authors/admin/_index.md")
 # Languages
 navigateToFile("config/_default/languages.yaml")
@@ -46,7 +46,7 @@ navigateToFile("content/home/projects.md")
 ## Widget pages
 
 # About
-navigateToFile("content/about/index.md")
+navigateToFile("content/authors/admin/_index.md")
 navigateToFile("content/about/about.md")
 
 # Contact
