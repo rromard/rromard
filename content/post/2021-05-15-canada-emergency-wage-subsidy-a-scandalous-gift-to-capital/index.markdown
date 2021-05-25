@@ -9,11 +9,12 @@ subtitle: "The Liberal Government's flagship pandemic response program is a corp
 summary: ''
 authors: []
 lastmod: '2021-05-15T03:37:53-04:00'
-featured: no
+featured: yes
 image:
-  caption: ''
-  focal_point: ''
-  preview_only: yes
+  placement: 1
+  caption: 'Photo by <a href="https://unsplash.com/@constantinevdokimov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Konstantin Evdokimov</a> on <a href="https://unsplash.com/s/photos/bank-money?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
+  focal_point: 'Center'
+  preview_only: no
 projects: []
 ---
 
@@ -21,15 +22,15 @@ projects: []
 
 To the capitalist class, a crisis that isn't used to enhance profits and power, is a crisis wasted. Restoration and reorganization through crisis is a fundamental principle of capitalism. The practice of disaster capitalism, where both natural and human-made disasters are used by the ruling classes to leverage anti-social, pro-corporate, profit-boosting agendas, has already been [well documented](https://www.theguardian.com/us-news/2017/jul/06/naomi-klein-how-power-profits-from-disaster). The COVID-19 Pandemic exemplifies this capitalist response to crisis to the extreme. 
 
-The Canada Emergency Wage Subsidy (CEWS) is a program that uses public funds to pay a portion of worker's wages (up to 75%) at any business that experiences a pandemic-related drop in revenue. The Office of the Auditor General [described the CEWS](https://www.oag-bvg.gc.ca/internet/English/mr_20210325_e_43792.html) as one of the "largest initiatives the [Canadian] government has ever undertaken and one of the key programs" of the Trudeau Government's pandemic recovery plan. To date, there have been little oversight and few stipulations attached to the funds. The Liberal government have offered only vague and non-committal utterances that misuse of the subsidies will be addressed *some day*.  
+The Canada Emergency Wage Subsidy (CEWS) is a program that uses public funds to pay a portion of worker's wages (up to 75%) at any business that experiences a pandemic-related drop in revenue. The Office of the Auditor General [described the CEWS](https://www.oag-bvg.gc.ca/internet/English/mr_20210325_e_43792.html) as one of the "largest initiatives the [Canadian] government has ever undertaken and one of the key programs" of the Trudeau Government's pandemic recovery plan. To date, there have been little oversight and few stipulations attached to the funds. The Liberal government have offered only [vague and non-committal](https://www.theglobeandmail.com/politics/article-chrystia-freeland-defends-wage-subsidy-as-opposition-accuses-liberals/) utterances that misuse of the subsidies *may* be addressed *some day*.  
 
 <img src="covid_total_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies where total subsidies was 67% of profits" alt="Bullet chart comparing after-tax profits to subsidies where total subsidies was 67% of profits"  />
 
 There can be no doubt that the CEWS played a major role in propping up corporate profits during a crisis of historic proportions. The total value of wage subsidy payouts in 2020 were equal to **67% of after-tax profits** of all non-financial corporations. The outcome of this program was entirely predictable by anyone with even a basic understanding of capitalism: **(1)** capitalists always desire higher short-term profits and **(2)** they implicitly understand that, all else being equal, a dollar less in wages is a dollar more for profits. Unsurprisingly, as a direct subsidy to capitalist's profit margins, the CEWS amounted to a massive transfer of wealth from the public to the capitalist ruling class. This result is not an accident, of course, as it was declared rather euphemistically, to be one of the main goals of the program: to "protect jobs and [promote growth."](https://www.canada.ca/en/department-finance/news/2020/07/adapting-the-canada-emergency-wage-subsidy-to-protect-jobs-and-promote-growth.html) As for saving jobs, while no detailed data on hiring patterns at subsidized firms exists, there is [evidence to believe](https://financesofthenation.ca/2020/12/02/news-about-cews/) that the impact of CEWS has been very modest at best.  
 
-### The Big Picture: Examining the CEWS at the sector level
+### The Big Picture: Examining CEWS at the sector level
 
-StatCan produces summary data on approved CEWS claims at the industry level, as defined by the North American Industry Classification System. By combining that data with the most recent data from the Quarterly Survey of Financial Statements, it's possible to get a bigger picture view of the distribution of subsidies at the industry-wide level. Some of the figures are astounding. The construction industry took in 52% of their after-tax profits worth of CEWS, while breaking the sector's **all time record high for profits**. Despite posting profits of over \$30B, the manufacturing sector took in over \$10B in wage subsidies. In the wholesale sector, dominated by large corporate employers, companies received over \$8.7B in CEWS and enjoyed their **second most profitable year ever**. The administration and building support industry, a bastion of low-wage and precarious labour, made $5.89B in profits and absorbed almost as much as their profits (92%) in wage subsidies.  
+StatCan produces summary data on approved CEWS claims at the industry level, as defined by the North American Industry Classification System. By combining that data with the most recent data from the Quarterly Survey of Financial Statements, it's possible to get a bigger picture view of the distribution of subsidies at the industry-wide level. Some of the figures are astounding. The construction industry took in 52% of their after-tax profits worth of CEWS, while breaking the sector's **all time record high for profits**. Despite posting profits of over \$30B, the manufacturing sector took in over \$10B in wage subsidies. In the wholesale sector, dominated by large corporate employers, companies received over \$8.7B in CEWS and enjoyed their **second most profitable year ever**. The administration and building support industry, a bastion of low-wage and precarious labour, made $5.9B in profits and absorbed almost as much as their profits (92%) in wage subsidies.  
 
 <img src="covid_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 41% of industry profits" alt="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 41% of industry profits"  />
 
@@ -41,7 +42,9 @@ Below are the top 15 companies in the registry by the amount of wage subsidies r
 
 <img src="covid_profit_textbar.svg" title="Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest" alt="Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest"  />
 
-The socioeconomic impacts of the COVID-crisis will likely last for years. It almost goes without saying that we should fight for more genuine and lasting supports for workers and vulnerable populations. Imagine the sheer absurdity of a socio-economic system that, during a global pandemic, invests \$80B to $100B in padding the profits of capitalists instead of in needed services like healthcare or revitalizing the EI system.  
+The socioeconomic impacts of the COVID-crisis will likely last for years. It almost goes without saying that we should fight for more genuine and lasting supports for workers and vulnerable populations. Imagine the sheer absurdity of a socio-economic system that, during a global pandemic, invests \$80B to $100B in padding the profits of capitalists instead of in needed services like healthcare or revitalizing the EI system.   
+
+[Download the data for the top 50 corporate CEWS recipients as a CSV]("lobby_cews_recipients_2020.csv")
 
 ##### Data Sources
 

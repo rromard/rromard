@@ -20,25 +20,17 @@ superuser: true
 title: Ryan Romard
 ---
 
-My academic training is in political science and sociology and I have been
-working as a researcher and data specialist in the public sector for several 
-years. **Data Science for Class Struggle** is my personal website, serving as an
-outlet for my independent analysis, writing, data visualizations, and infographics.
-My personal work is informed by Marxist approaches to sociology and political 
-economy and as such, takes a highly opinionated stand against all forms of exploitation 
-and oppression. All analysis and views are strictly my own, unless indicated
-otherwise.
+Data science can be defined as a multidisciplinary approach to producing insight and solving problems combining statistics, computer science and programming, domain-based knowledge, and data-driven storytelling. Applied at scale to capitalist business use-cases [by multinational corporations](https://www.worldcat.org/title/peoples-republic-of-walmart-how-the-worlds-biggest-corporations-are-laying-the-foundation-for-socialism/oclc/1060586318), data science has produced highly sophisticated, globally integrated systems of real-time planning, organization, and exploitation as exemplified by Amazon or Walmart.  
 
-My data science learning journey, ongoing since 2018, is still in the 
-early days and I would describe myself as an intermediate programmer at best. I
-still have so much to learn about data science, so I am hoping that this site
-will serve as an educational resource, both in my own learning and also for others
-on the left. If you or your organization(s) are curious about incorporating 
-data science and social scientific research methods your theory and practices,
-feel free to get in touch with me using the contact form below.  
+At the outset of the 2020s, the theory and practice of using data science for public good is still in infancy. What might happen if we plugged historical materialism into the domain knowledge slot of the data science model? Can the emergent discipline of data science play a meaningful role in the struggle for socialism in the 21st Century? At this point, there are no easy answers to the question. The aim of this site is to contribute in three ways:        
 
--*RR*
+1. **Sharpening** criticism of capitalism with data-based approaches and using data storytelling, with emphasis on data visualization, to mobilize that critique.   
 
+2. **Serving** as an educational resource for those on the left wanting to get started on finding, preparing, and using data in their writing and practice. This collection will have a special emphasis on using data visualization to bolster socialist communication strategies.
+
+3. **Seeking** insight into the potential of data science and information technology to inform visions of rationally planned socialist economies and strategies for socialist practice required to achieve them.
+
+ As the author is a citizen of the Canadian settler-state, criticism of Canadian capitalism will be prominently featured.
 
 
 

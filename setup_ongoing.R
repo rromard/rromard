@@ -25,7 +25,6 @@ navigateToFile("config/_default/params.yaml")
 navigateToFile("date/page_sharer.toml")
 
 ## Comments
-
 navigateToFile("layouts/partials/comments.html")
 
 ## Home page
