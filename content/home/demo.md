@@ -20,7 +20,7 @@ design:
 # Data Science for Class Struggle
 
 ## > Data-driven analysis and criticism of capitalism
-## > Data visualization and data storytelling against capitalism
+## > Data visualization and data storytelling
 ## > Data science learning resources for the left
 ## > Marxist perspectives on data science and socialism
 
