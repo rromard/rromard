@@ -28,7 +28,7 @@ alt_text2 <- "Bullet chart comparing after-tax profits to subsidies by industry 
 alt_text3 <- "Text bar chart showing the top corporate subsidy recipients where major airline, energy, auto, and telecom companies took from $52 to $586 million in subsidies, with Air Canada being the highest"
 ```
 
-To the capitalist class, a crisis that isn't used to enhance profits and power, is a crisis wasted. Restoration and reorganization through crisis is a fundamental principle of capitalism. The practice of disaster capitalism, where both natural and human-made disasters are used by the ruling classes to leverage anti-social, pro-corporate, profit-boosting agendas, has already been [well documented](https://www.theguardian.com/us-news/2017/jul/06/naomi-klein-how-power-profits-from-disaster). The COVID-19 Pandemic exemplifies this capitalist response to crisis to the extreme. 
+To the capitalist class, a crisis that isn't used to enhance profits and power, is a crisis wasted. Restoration and reorganization through crisis is a fundamental principle of capitalism. The practice of disaster capitalism, where both natural and human-made disasters are used by the ruling classes to leverage anti-social, pro-corporate, profit-boosting agendas, has already been [well documented](https://www.theguardian.com/us-news/2017/jul/06/naomi-klein-how-power-profits-from-disaster). The COVID-19 Pandemic exemplifies this reflexive capitalist response to crisis to the extreme. 
 
 The Canada Emergency Wage Subsidy (CEWS) is a program that uses public funds to pay a portion of worker's wages (up to 75%) at any business that experiences a pandemic-related drop in revenue. The Office of the Auditor General [described the CEWS](https://www.oag-bvg.gc.ca/internet/English/mr_20210325_e_43792.html) as one of the "largest initiatives the [Canadian] government has ever undertaken and one of the key programs" of the Trudeau Government's pandemic recovery plan. To date, there have been little oversight and few stipulations attached to the funds. The Liberal government have offered only [vague and non-committal](https://www.theglobeandmail.com/politics/article-chrystia-freeland-defends-wage-subsidy-as-opposition-accuses-liberals/) utterances that misuse of the subsidies *may* be addressed *some day*.  
 
@@ -60,17 +60,18 @@ Below are the top 15 companies in the registry by the amount of wage subsidies r
 knitr::include_graphics('covid_profit_textbar.svg', error = FALSE)
 ```
 
-The socioeconomic impacts of the COVID-crisis will likely last for years. It almost goes without saying that we should fight for more genuine and lasting supports for workers and vulnerable populations. Imagine the sheer absurdity of a socio-economic system that, during a global pandemic, invests \$80B to $100B in padding the profits of capitalists instead of in needed services like healthcare or revitalizing the EI system.   
+The COVID-19 crisis will leave a legacy of socioeconomic pain and misery for the people that's likely last for years. In this time of extraordinary needs, we must be approaching peak capitalist absurdity, as we bear witness to one of the **most ambitious and expensive** government programs ever undertaken in the history of this country amount to little else beyond pouring \$80B to $100B of public funds down the drain, into the bank accounts of capitalists. We would do well to remember this when, in the years to follow, the ruling classes and their representatives [predictably insist](https://nationalpost.com/news/plunging-revenues-and-sky-high-deficits-could-turn-catastrophic-for-canadian-governments-report-warns) on an agenda of brutal austerity to push the costs of the crisis response onto the working class majority and the public at large. 
+    
 
 [Download the data for the top 50 corporate CEWS recipients in the National Lobbyist Registry as a CSV](lobby_cews_recipients_2020.csv)
 
 #### Data Sources
 
 <ul class="source-text">
-<li>Office of the Comissioner of Lobbying of Canada. Registry of Lobbyists.  12- month data extract done in May, 2021.</li>
+<li>Office of the Commissioner of Lobbying of Canada. Registry of Lobbyists.  12- month data extract done in May, 2021.</li>
 <li>StatCan. CEWS Detailed Data, Table 2a. "Approved CEWS claims by period and industry sector, Canada." Accessed April 2021.</li>
-<li>StatCan. Table 33-10-0226-01. "Quarterly balance sheet and income statement, by industry, seasonally adjusted.' Accessed April 2021</li>
 <li>StatCan. Table 33-10-0160-01. "Historical (real-time) releases of quarterly balance sheet and income statement items, by industry". Accessed April 2021.</li>
+<li>StatCan. Table 33-10-0226-01. "Quarterly balance sheet and income statement, by industry, seasonally adjusted.' Accessed April 2021</li>
 </ul>
 
 #### Start a discussion

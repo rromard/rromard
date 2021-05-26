@@ -32,8 +32,11 @@ At the outset of the 2020s, the theory and practice of using data science for pu
 
 #### Notes from the author 
 
-- As I am a citizen of the Canadian settler-state, residing in Toronto (Tkaronto) on the the traditional land of the Haudenosaunee, Anishinaabek, the Huron-Wendat, the Seneca, and Mississaugas of the Credit, the content of this site will feature criticism of Canadian capitalism prominently.
-- I don't consider myself, at this point in time, to be a practicing data scientist. Rather, I am a sociologist and research analyst with personal and professional interest in the theory and practice of data science and coding. I hope that this site will be useful both for my own self-guided learning and as a resource to readers.
+I don't consider myself, at this point in time, to be a practicing data scientist. Rather, I am a sociologist and research analyst with personal and professional interest in the theory and practice of data science and coding. I hope that this site will be useful both for my own self-guided learning and as a resource to readers.
+
+As I am a citizen of the Canadian settler-state, residing in Toronto (Tkaronto) on the the traditional land of the Haudenosaunee, Anishinaabek, the Huron-Wendat, the Seneca, and Mississaugas of the Credit, the content of this site will feature criticism of Canadian settler-capitalism prominently.
+
+Feel free to use the form below to get in touch with questions, comments, or insights. 
 
 
 
