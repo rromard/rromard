@@ -4,8 +4,13 @@
 type: page
 share: true
 
-title: Gallery
+title: Data Visualizations
 subtitle:
 ---
 
-{{< gallery >}}
+## Under construction
+
+This section will eventually host an archive of high-quality versions of my
+data visualizations that are easily sharable on social media.
+
+## Under construction

@@ -8,7 +8,7 @@ main:
     url: '#posts'
     weight: 10
   - name: Learning
-    url: '/courses'
+    url: '/learning'
     weight: 20
   - name: Gallery
     url: '/gallery'

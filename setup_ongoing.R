@@ -57,6 +57,9 @@ navigateToFile("content/contact/contact.md")
 # Gallery
 navigateToFile("content/gallery/index.md")
 
+# Learning
+navigateToFile("content/learning/index.md")
+
 # Posts
 navigateToFile("content/post/_index.md")
 
