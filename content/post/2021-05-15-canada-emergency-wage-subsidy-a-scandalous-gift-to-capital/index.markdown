@@ -24,7 +24,7 @@ To the capitalist class, a crisis that isn't used to enhance profits and power, 
 
 The Canada Emergency Wage Subsidy (CEWS) is a program that uses public funds to pay a portion of worker's wages (up to 75%) at any business that experiences a pandemic-related drop in revenue. The Office of the Auditor General [described the CEWS](https://www.oag-bvg.gc.ca/internet/English/mr_20210325_e_43792.html) as one of the "largest initiatives the [Canadian] government has ever undertaken and one of the key programs" of the Trudeau Government's pandemic recovery plan. To date, there has been little oversight and few stipulations attached to the funds. The Liberal government have offered only [vague and non-committal](https://www.theglobeandmail.com/politics/article-chrystia-freeland-defends-wage-subsidy-as-opposition-accuses-liberals/) utterances that misuse of the subsidies *may* be addressed *some day*.  
 
-<img src="covid_total_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies where total subsidies was 76% of after tax profits" alt="Bullet chart comparing after-tax profits to subsidies where total subsidies was 76% of after tax profits"  />
+<img src="covid_total_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies where total subsidies worth $85.5 billion were worth 76% of after tax profits of $113 billion" alt="Bullet chart comparing after-tax profits to subsidies where total subsidies worth $85.5 billion were worth 76% of after tax profits of $113 billion"  />
 
 There can be no doubt that the CEWS played a major role in propping up corporate profits during a crisis of historic proportions. The total value of wage subsidy payouts in 2020 were equal to **76% of after-tax profits** of non-financial corporations. The outcome of this program was entirely predictable by anyone with even a basic understanding of capitalism. Capitalists always desire higher short-term profits and all else being equal, a dollar less in wages is a dollar more for profits.   
 
@@ -36,7 +36,7 @@ StatCan produces summary data on approved CEWS claims at the industry level, as 
 
 The construction industry took over \$8B worth of CEWS, amounting to nearly a third (27%) of after-tax profits, while shattering the sector's **all time record high for profits by around \$6B**. Despite posting profits of over \$25B, the manufacturing sector grabbed nearly half of that amount in wage subsidies. In the wholesale sector, dominated by large corporate employers, companies received over \$5.2B in CEWS, while the industry enjoyed its **second most profitable year ever**. Among profitable industries in 2020, the professional, scientific, and technical services sectors were propped up by government support the most, collecting subsidies worth over two-thirds of their \$8.2B in profits.  
 
-<img src="covid_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 35% of industry after tax profits" alt="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 35% of industry after tax profits"  />
+<img src="covid_profit_bar.svg" title="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 35% of industry after tax profits and the top subsidy recipients were construction, manufacturing, and wholesale" alt="Bullet chart comparing after-tax profits to subsidies by industry where the average subsidy was 35% of industry after tax profits and the top subsidy recipients were construction, manufacturing, and wholesale"  />
 
 In addition to sector level data, StatCan also produces summary data on the firm sizes of subsidy recipients. CEWS purposely favors large firms by subsidizing all employees at a firm, not just those facing a lay-off or reduction in hours. While small businesses accounted for just under three-quarters of CEWS applications, they received under a quarter (just over \$16B) of distributed subsidies. Large firms, those with over 250 employees, accounted for only 2% of applications (an average of 3884 firms per period) yet were given 34% of all CEWS funds. As expected, CEWS has been a windfall for large capitalists who have cut their wage bills by **$23.3B in total** at an average of $510,172 per firm per 4 week period.
 
@@ -59,6 +59,7 @@ The COVID-19 crisis will leave a legacy of socioeconomic pain and misery for the
 
 <ul class="source-text">
 <li>Office of the Commissioner of Lobbying of Canada. Registry of Lobbyists.  12- month data extract done in May, 2021.</li>
+<li>Segel, Brown. 2021. "Canada Emergency Wage Subsidy (CEWS) - March 2020 to June 2021." Office of the Parliamentary Budget Officer.</li>
 <li>StatCan. CEWS Detailed Data, Table 2a. "Approved CEWS claims by period and industry sector, Canada." Accessed May 2021.</li>
 <li>StatCan. CEWS Detailed Data, Table 3. "Approved CEWS claims by period and size of applicant, Canada." Accessed May 2021.</li>
 <li>StatCan. Table 33-10-0160-01. "Historical (real-time) releases of quarterly balance sheet and income statement items, by industry". Accessed May 2021.</li>

@@ -2,15 +2,6 @@ section#demo div.container{
 max-width:90%;
 }
 
-img[src$='#floatleft']
-{
-	float:left;
-    align:left; 
-    margin: 0px 15px 15px 0px; 
-    max-width: 75%;
-	height: auto;
-}
-
 ol.source-text {
 	list-style-position: inside;
 	text-indent: -2em;
@@ -38,4 +29,9 @@ ol.source-text {
 	margin-top: 0;
     flex: 1 1 400px;
   }
+}
+
+.figure-float {
+	float: right;
+	text-align: left;
 }
