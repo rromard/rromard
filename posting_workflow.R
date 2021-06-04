@@ -20,7 +20,7 @@ blogdown::new_post(title = "Canada Emergency Wage Subsidy: A scandalous gift to 
 navigateToFile("content/post/2021-05-15-canada-emergency-wage-subsidy-a-scandalous-gift-to-capital/index.Rmarkdown")
 
 # Post 2: Canadian Mining in Africa: A case study in imperialist exploitation 
-blogdown::new_post(title = "Canadian Mining in Africa: A case study in imperialist exploitation", 
+blogdown::new_post(title = "Excavating the Truth on Canadian Mining in Africa", 
                    ext = '.Rmarkdown', 
                    subdir = "post")
 

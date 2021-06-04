@@ -42,7 +42,7 @@ There can be no doubt that the CEWS played a major role in propping up corporate
 
 Unsurprisingly, as a direct subsidy to capitalist's profit margins, the CEWS amounted to a massive transfer of wealth from the public to the capitalist ruling class. This result is not an accident, of course, as it was declared rather euphemistically, to be one of the main goals of the program: to "protect jobs and [promote growth."](https://www.canada.ca/en/department-finance/news/2020/07/adapting-the-canada-emergency-wage-subsidy-to-protect-jobs-and-promote-growth.html) As for saving jobs, while no detailed data on hiring patterns at subsidized firms exists, there is [evidence to believe](https://financesofthenation.ca/2020/12/02/news-about-cews/) that the impact of CEWS has been very modest at best.  
 
-### The Big Picture: Examining CEWS at the sector level
+## The Big Picture: Examining CEWS at the sector level
 
 StatCan produces summary data on approved CEWS claims at the industry level, as defined by the North American Industry Classification System. Combining the CEWS sector data with summary data from the most recent (2020) Quarterly Survey of Financial Statements, it's possible to get a bigger picture view of the distribution of subsidies at the industry-wide level. Some of the figures are astounding.
 
@@ -58,7 +58,7 @@ In addition to sector level data, StatCan also produces summary data on the firm
 knitr::include_graphics('covid_profit_sizebar.svg', error = FALSE)
 ```
 
-### Detailed data reveals extensive corporate plunder of public funds
+## Detailed data reveals extensive corporate plunder of public funds
 
 Detailed, company-level data has thus far been kept secret by the Liberal government. However, companies registering for political lobbying activities must report government funds received in the past year, so there is *some* public data available on corporate CEWS recipients. In the lobbying registry, some companies disclosed receiving CEWS specifically, while many confirmed CEWS recipients reported taking funds from the Canada Revenue Agency, without specifying CEWS. The top 50 for-profit recipients in the lobbyist registry reported taking **$2.67 billion in subsidies** from the Canada Revenue Agency during the first year of the pandemic. This list represents many of Canada's major corporate players, most of which continued to issue massive dividend payouts to shareholders while cutting their wage bill with CEWS.
 

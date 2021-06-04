@@ -31,7 +31,36 @@ ol.source-text {
   }
 }
 
-.figure-float {
-	float: right;
-	text-align: left;
+.bust-out-with-max-width {
+  margin: calc(50vw - 50%);
+  max-width: 2060px;
+}
+
+burst-out {
+    width:100%;
+    background:#000;
+    position:relative;
+    margin:0 auto;
+    color:#fff;
+    text-align:center;
+    }
+
+burst-out-img {
+    width: 150%;
+    margin: 0px 0 0 -10%;
+    position: relative;
+    display: block;
+    }
+
+	
+img[src$='#floatleft']
+{
+	float:left;
+        //etc. etc/
+}
+
+img[src$='#floatright']
+{
+	float:right;
+       //etc. etc.
 }
