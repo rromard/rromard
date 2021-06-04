@@ -71,7 +71,7 @@ Breaking with the [extractivist and colonialist logic of capitalism](https://www
 - Maps from: South, A. 2017. "rnaturalearthdata." R package, version 1.0
 - NRC. 2021. "Canadian Mining Assets." Information Bulletin,  National Resources Canada. 
 - NRC. 2018. "Canadian Energy Assets." Information Bulletin,  National Resources Canada.
-- StatCan. Table 36-10-0470-01, "Activities of Canadian multinational enterprises abroad, by country." Accessed May 202.
+- StatCan. Table 36-10-0470-01, "Activities of Canadian multinational enterprises abroad, by country." Accessed May 2020.
 - StatCan. Table 36-10-0440-01, "Activities of Canadian multinational enterprises abroad, by industry." Accessed May 2021
 - World Bank. 2021. "Adjusted savings: mineral depletion (% of GNI); GDP (Current US\$); Poverty headcount at $5.50 a day (2011 PPP)." World Development Indicators. World Bank, Global Poverty Working Group.
 
