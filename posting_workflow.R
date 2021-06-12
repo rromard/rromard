@@ -26,3 +26,11 @@ blogdown::new_post(title = "Excavating the Truth on Canadian Mining in Africa",
 
 ## Post 2: Index file
 navigateToFile("content/post/2021-05-30-canadian-mining-in-africa-a-case-study-in-imperialist-exploitation/index.Rmarkdown")
+
+# Post 3: Defund the police 
+blogdown::new_post(title = "The Police and Prison Defunding Dividend", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
+## Post 3: Index file
+navigateToFile("content/post/2021-06-09-the-police-and-prison-dividend/index.Rmarkdown")

@@ -1,0 +1,150 @@
+---
+title: What is the Police and Prison Dividend?
+author: Ryan Romard
+date: '2021-06-09'
+slug: the-police-and-prison-defunding-dividend
+categories: []
+tags: []
+subtitle: 'The political economy of defunding the police and prisons in Canada'
+summary: ''
+authors: []
+lastmod: '2021-06-09T14:03:02-04:00'
+featured: no
+image:
+  caption: 'Photo by <a href="https://unsplash.com/@ev"> ev </a> on <a href="https://unsplash.com/"> Unsplash</a>'
+  focal_point: 'center'
+  preview_only: no
+projects: []
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+```
+
+What is the **police and prison dividend**? It's quite similar in concept to the [peace dividend](https://truthout.org/articles/a-road-not-taken-the-dream-of-the-peace-dividend/), the proposal that diverting money and resources away from the military-industrial complex to civilian uses can yield great economic and social benefits. The military-industrial complex wastes the labour and resources of society to produce vastly expensive means of destruction, providing little to no tangible benefits to social well-being. 
+
+As the [somewhat refreshingly honest imperialist](https://en.wikipedia.org/wiki/Chance_for_Peace_speech), Dwight D. Eisenhower explained:
+
+> Every gun that is made, every warship launched, every rocket fired signifies, in the final sense, a theft from those who hunger and are not fed, those who are cold and are not clothed. This world in arms is not spending money alone. It is spending the sweat of its laborers, the genius of its scientists, the hopes of its children. 
+
+It follows from the logic of the peace dividend that diverting resources from sectors of the economy that likely destroy value and restrict productivity, policing and prisons, into actually useful sectors, like education or healthcare, also holds considerable potential. This analysis is intended to be a first step on quantifying the potential economic benefits of the police and prison dividend to Canadian society. 
+
+Such gains are, of course, on top of immediate boon of restricting the coercive powers of the capitalist state. Even if divestment from policing and prisons weren't a good economic investment for society, it would **still be the correct path to follow.** 
+
+To "ask about alternatives to police," as [criminologist Luis Fernandez](https://www.mcgilldaily.com/PoliceIssue/Restorative-Justice.html) puts it, "is to ask the question of what are the alternatives to capitalism?" Abolition of the police a necessary step in ending the [inherently racist, oppressive, and violent order of capitalism](https://yellowheadinstitute.org/2020/07/15/police-brutality-in-canada-a-symptom-of-structural-racism-and-colonial-violence/) that police exist to enforce— but it just so happens that divestment also contains great economic potential. 
+
+{{< figure src="police_chart1.svg">}}
+
+Many Canadians will be shocked to learn how much of society's resources are wasted on policing and incarceration. In 2017-2018, the year that this analysis focuses on, all levels of Canadian governments (federal, provincial and local) spent a combined $20.5B on policing and the prisons. That's almost as much as that year's [entire military budget](https://www.macrotrends.net/countries/CAN/canada/military-spending-defense-budget) of \$22B. If all of policing and prisons funding were grouped together as an item on the 2017-2018 Federal Budget, it would have been one the largest expenses of public funds by the government that year. 
+
+## How can we estimate the police and prison dividend?
+
+Every two years, Statistics Canada produces the results of an economic simulation of the Canadian economy called [input-output tables](https://www23.statcan.gc.ca/imdb/p2SV.pl?Function=getSurvey&SDDS=1401). Using this data, it's possible to produce estimates of how investment in one sector of the economy will impact the other sectors of the economy in terms of output, GDP growth, and jobs created. 
+
+The estimated overall impact of investment on the economy is summarized as a **multiplier** for most sectors or industries. For example, an output multiplier of 1.3 would indicate that an extra 30¢ worth of output is produced for every $1 of investment.  The [total multiplier](https://www150.statcan.gc.ca/n1/pub/13-606-g/2016001/article/14619-eng.htm) measures the overall impact of investment at three levels:  
+
+1. **Direct impacts** that are the immediate result of the economic activity.  
+2. **Indirect impacts** that on other industries as a result of the original investment.  
+3. **Induced impacts** that estimates the effect of changes in household spending due to the original investment.  
+
+Using the most recent economic multiplier data (2017) from StatCan, it's possible to estimate the impacts of reinvesting public spending from policing and prisons into other actually productive sectors of the economy. For the purposes of this analysis, let's assume that there is an investment equivalent to 70% of current public expenses on policing and prisons back into five of the highest impact (based on their input-output multipliers) public service and non-profit sectors of the economy. 
+
+The chosen sectors are First Nations local governments, social assistance, public education, public health care, and urban transit systems. While these sectors typically don't produce commodities for sale on the market, the input-output multiplier tables show substantial impact on the economy as a whole. Typically, these sectors will return **\$1.20 to \$1.30 for every dollar invested** when the indirect and induced impacts are taken into account. 
+
+{{% callout note %}}
+Example of the **total multiplier** impacts of education spending:
+
+Increased public education spending may result in hiring of new teachers and the construction of new schools **(direct impacts)**.  
+
+Those changes in demand, in turn, may impact local construction and school supply firms **(indirect impacts)**.  
+
+Finally, if new teachers, construction workers, and textbook binders are hired and move into the community, this leads to an increase in local household spending, which in turn impacts other sectors of the economy **(induced impacts)**.
+{{% /callout %}}
+
+## The Police and Prison Dividend
+
+Defunding police and prisons by 70% would have raised funds of about $14.13B in 2017-2018. For the sake of the thought experiment, let's divide that sum up equally five ways into **\$2.87B chunks** to be reinvested into five high impact sectors of the economy: transit systems, social assistance, public education, public healthcare, and First Nations governments. 
+
+By reinvesting that funding from sectors that are probably destructive of value into sectors that are actually economically and socially useful, an estimated surplus of \$6.59B of goods and services would be produced. This is the concept of the Police and Prison Dividend in action:
+
+{{< figure src="police_chart2.svg">}}
+
+## Ending the waste of police and prisons leads to a jobs windfall
+
+Using input-output multiplication figures, it's also possible to estimate the impact of investment on job creation. Looking at job creation figures reveals one of the main reasons that divestment from police and prisons into other sectors can produce such economic ripple-effects. Policing and prisons are both notably bad investments in terms of job creation. The chosen public and social services sectors were **2.5 times more effective** at creating jobs compared to policing and prisons. 
+
+Police budgets are clearly [inflating out of control](https://www.ctvnews.ca/canada/cost-to-run-some-municipal-police-departments-has-ballooned-since-2015-1.5018532), making law enforcement the [biggest budget item](https://www.ctvnews.ca/canada/defund-the-police-this-is-how-much-canadian-cities-spend-1.5018506) of Canada's major cities. We have witnessed decades of austerity bringing brutal cuts to vital public services, while there always seems to be more money for the cops. It is as if the public sector has been defunded to boost the police. 
+
+Despite the avalanche of public funds, only 6.5 jobs were created per million dollars of spending— not to imply that we'd want more cops out there in the first place. Perhaps the extent to which police are [outrageously overpaid](https://www.theglobeandmail.com/news/toronto/swelling-ranks-of-toronto-polices-2014-sunshine-list-raises-alarms/article23469816/) and their [unnecessary toys are obscenely expensive](https://atlantic.ctvnews.ca/canada-s-militarized-police-forces-face-defunding-and-de-tasking-experts-say-1.5026945) has something to do with it.
+
+Likewise, the economic and human costs of incarceration are [notoriously egregious](https://www.macleans.ca/news/canada/houses-of-hate-how-canadas-prison-system-is-broken/). Corrections Canada, the agency running the federal prison system, spends anywhere from [\$100,236 to \$533,765 per year](https://www.pbo-dpb.gc.ca/web/default/files/Documents/Reports/2018/Update%20Incarceration%20Costs/Update%20on%20Costs%20of%20Incarceration_EN.pdf) to incarcerate a person. The average cost to build a new a maximum security federal facility is over a quarter of a billion dollars and can easily [top over a billion](https://torontolife.com/city/inside-toronto-south-detention-centre-torontos-1-billion-hellhole/) for a single facility. Prisons are even more abysmal at job creation (not that we want more employment in the sector) than policing; only 3.4 jobs in the prison sector were created per million dollars of spending. 
+
+A tide of job creation rolls in with the police and prison dividend, with an estimated 270,000+ jobs created. Even when accounting for the reduction in staffing levels in prisons and police forces, an estimated surplus of just under 190,000 jobs would be produced. Therein lies the essence of the police and prison dividend. A billion dollars of investment in prisons, for example, equated to about 3400 jobs, while the same investment in the social assistance sector would produce an estimated 23,400 jobs. 
+
+{{< figure src="police_chart3.svg">}}
+
+## Key assumptions of the Police and Prison Dividend
+
+#### 1. The economic value of policing and prisons is nil
+
+The first key assumption is that policing and prisons are not value producing sectors in economic terms. Most efforts to [quantify the economic value](https://www.justiceandsafety.ca/rsu_docs/the-economics-of-canadian-policing---june-2014_1.pdf) of policing resort to cost-benefit analysis to assign "value" to the prevention of crime. However, in capitalist political economy, prevention of a loss of value is not the same as creation of value, which only comes from the exploitation of labour in the process of commodity production. 
+
+The "products" of policing and prisons (the power of state coercion and incarceration) are not only directly useless to economic production, but they more than likely actually waste value produced in other sectors of the economy. This would likely not apply in the case of private, for profit policing or prisons, neither of which are currently a factor in Canada— with the rather odd exception of a nation-wide private [railway police force](https://ipolitics.ca/2020/02/11/canadas-railways-should-stop-investigating-themselves/).
+
+#### 2. The economic ripple effects of policing and prisons are minimal at best
+
+The second assumption is that public spending on policing and prisons has a limited at best (most likely negative) impact on local economic activity and employment; especially so when compared to the opportunity costs of not exploring other avenues for actually useful public investment. 
+
+It isn't just that policing and prisons are non-market sectors of the economy, in that they don't produce commodities for sale, since the sectors targeted for reinvestment are also engaged mostly in non-market production. StatCan uses a [special procedure](https://www150.statcan.gc.ca/n1/pub/13-606-g/2016001/article/14619-eng.htm) to incorporate non-market production into the input-output tables by valuing the output at the cost of production. 
+
+Even so, StatCan does **not** produce any input-output estimates of the economic impact of spending on either policing or prisons, though estimates are produced for the private security and also military sectors. An extensive review of existing research uncovered many references to "force multiplication," but virtually no material related to incorporating police/prison spending into input-output models or estimating economic multipliers for such spending.
+
+In fact, only a single study estimating an input-output multiplier for policing could be located. In a 2011 analysis of post-Great Recession stimulus in the US, the authors found that stimulus spending on police services had an [negative implied impact multiplier of -$3.30 for every dollar invested](https://www.nber.org/system/files/working_papers/w16759/w16759.pdf) and no meaningful impact on local employment.  
+
+A [meta-analysis](https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1540-6237.2010.00690.x) of the limited research on the economic impact of prisons on local economies in the US found no positive employment impact on employment from 1976 to 2004. Another [longitudinal study on rural prison sites in New York state](https://www.sentencingproject.org/wp-content/uploads/2016/01/Big-Prisons-Small-Towns-Prison-Economics-in-Rural-America.pdf) found likewise, that the employment gains and local economic benefit of prisons were slim to none because "few linkages to local economies" are made. Both findings are in accord with the extremely low performance of prison spending on employment found in this analysis (only 3.3 jobs per million) and reports from [Canadian communities impacted by prison placement](https://www.tvo.org/article/why-new-prisons-may-not-bring-new-jobs). 
+
+Even worse, as the authors of both previously mentioned studies noted, the presence of a prison can have a negative impact on local economies, driving wages down by forcing local workers to compete with prisoners for jobs, when the latter can be paid little to nothing. [Super-exploitation of prison labour](https://www.nationalmagazine.ca/en-ca/articles/law/in-depth/2019/all-work-and-low-pay) is unfortunately just as [significant](https://www.huffingtonpost.ca/entry/canada-prison-labour-covid-face-masks_ca_5fdd1a5ac5b6e5158fa70360) a factor [here](https://briarpatchmagazine.com/articles/view/milking-prison-labour) as it is in the United States; prisoners in Canada can earn up to a [max of just $6.90 a day](https://www.macleans.ca/news/canada/houses-of-hate-how-canadas-prison-system-is-broken/#:~:text=The%20most%20an%20inmate%20can,%2C%E2%80%9D%20the%20corrections%20officer%20reported.) and are often made to pay for their living costs on top of that.  
+
+#### 3. What about the costs of crime?
+
+Skeptics of the police and prison dividend will likely bring up the costs of crime. It is in fact true that crime is [very costly](https://www.publicsafety.gc.ca/cnt/rsrcs/pblctns/2015-r022/index-en.aspx) to society, especially violent crimes, which are estimated to have costs in the hundreds of thousands or even millions of dollars.
+
+Even if it were granted that there is a sizable divestment dividend, what would be the point if the reduction in the power of the police leads to an out of control increase in crime that does untold economic damage?
+
+There are criminologists that would have the public believe that a [science-based consensus](https://www.city-journal.org/bolstering-police-forces-reduces-crime) has formed around the positive capacity of police to prevent crime. In truth, there is still [much debate](https://www.jstor.org/stable/25766109?mag=do-police-deter-crime&seq=1#metadata_info_tab_contents) between criminologists on the evidence that police are effective at preventing crime. In many cases, the quality of the research that concluded more cops equal less crime was discovered to be poor, with [only 9 out of 41 studies](https://daily.jstor.org/do-police-deter-crime/) passing muster in a 2005 meta-analysis that concluded the link between both police funding and force strength and crime was minimal.
+
+As it turns out in reality, the police are likely [far less effective at responding to and preventing crime](https://theconversation.com/police-solve-just-2-of-all-major-crimes-143878) than we are often lead to believe. The Canada-wide [weighted crime clearance rates](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3510002601), which give more importance to more severe crimes, were only 57.6% for violent crimes and 27.7% for non-violent crimes in 2019. 
+
+Even though police have been clearing only slightly more than half of crimes in Canada since at least 1998, a 2015 StatCan analysis found that all types of crime, violent crime included, [underwent two decades of steady decline](https://www150.statcan.gc.ca/n1/pub/11-630-x/11-630-x2015001-eng.htm) from 1993 to 2013. The authors of that analysis attributed the decline to many factors including changes in inflation and unemployment, alcohol consumption, an aging population, and legislative changes: policing was notably absent from the analysis. That downward trend has reversed since 2015, with [most forms of crime increasing each year until 2019](https://www150.statcan.gc.ca/n1/daily-quotidien/201029/dq201029a-eng.htm?indid=4751-2&indgeo=0), though overall crime rates still remain 9% lower than in 2009.
+
+Finally, there are many ways to [prevent and respond to crime and violence](https://www.rollingstone.com/politics/politics-news/police-brutality-cop-free-world-protest-199465/) that do not involve the police or the criminal justice system at all. Any [genuine program of police and prison divestment](https://static1.squarespace.com/static/6017561aa0646e0baa91251c/t/60257ae4703af042c3f2dd3e/1613069033514/NationalDefundingDocument_FINAL+%285%29.pdf) would no doubt hinge on an encompassing strategy for preventing and responding to crime by investing in communities and reinvigorating vital public services. 
+
+An extensive study on the evidence on non-police based methods for [improving public safety](https://johnjayrec.nyc/2020/11/09/av2020/) found promising evidence for interventions such as, but not limited to: improvements to the physical environment, expanding green space, public health campaigns, community-based organizing campaigns, programs to support youth, and mitigating people's financial stress. All fruitful areas for reinvestment of police and prison funding.
+
+## Limitations and future research
+
+I am aiming for this work to be a first step in further research on the political economy of police and prison divestment. There are a few limitations of this analysis that I hope to address in future research worth noting.
+
+#### Multipliers are frozen in time
+
+First, input-output multipliers only provide a static, slice of time type of analysis for the given year. It uses static calculations, not a complex model or simulation that can better represent functioning economic systems, let alone the complex social transformations involved in genuine police and prison divestment. StatCan releases multipliers rather infrequently and updates will always be lagged by several years. Input-output multipliers are often used in practice beyond the year they are issued for, but the usefulness of the estimates dissipates quickly as more time passes.
+
+#### Estimation and bias
+
+Second, the computed figures for GDP impact and job creation are only estimates, so a degree of over or under estimation is probable. 
+Some authors have cautioned that closed input-output models may [overestimate the GDP and job creation impacts](http://global-economics.ca/input.output.multipliers.pdf) to a degree, though to what extent isn't easily determined. Additionally, there may be some overestimation because there are probably *some* indirect and induced impacts of spending on policing; however after an extensive search I am unaware of any existing study trying to estimate them. 
+
+On the other hand, there are also likely sources of underestimation. Should the costs of [police violence](https://www.pivotlegal.org/17_years_of_police_violence_in_canada) be accounted for in the dividend calculations? What about the costs of [police corruption](https://www.thestar.com/news/canada/2014/05/18/rcmp_study_finds_hundreds_of_cases_of_corruption_in_mounties.html)? Or the costs of [property seizure](https://www.cbc.ca/news/canada/british-columbia/bc-administrative-civil-forfeiture-data-part-one-1.5180022)? If so, the dividend is most likely underestimated. At this level of analysis, it's difficult to estimate how much either factor would influence the dividend.  
+
+#### Regional variations
+
+For the sake of simplifying the initial analysis, geographic differences in the distribution of police and prison and redistribution of those funds into public and social services are abstracted away. StatCan does produce multiplier figures at the provincial level based on an inter-provincial input-output model. A next step is to account for the spatial dimension of police/prison divestment. It may end up being more fruitful to estimate the local or regional impacts of divestment in the future.
+
+#### Keyensian versus Marxist multipliers
+
+There are more issues related to the use of input-output multipliers, often called Keyensian multipliers, and the ultimately faulty analysis of capitalist political economy advanced by Keyensian economics. The [conventional Keyensian multiplier](https://thenextrecession.wordpress.com/2012/06/13/keynes-the-profits-equation-and-the-marxist-multiplier/) relies on an understanding that consumption and not profitability is the main driver of investment under capitalism. 
+
+That means that if changes in public investment move the [average profitability of capital](https://thenextrecession.wordpress.com/2013/01/13/multiplying-multipliers/), the indirect and induced growth and job creation figures implied by the conventional multipliers will be off. Of course, it is also worth noting that nation-wide divestment from police and prisons at such a scale is not an incremental reform in a Keyensian stimulus package— defunding must be a movement towards abolition of the police, the violent enforcers of capitalist order, which itself is a necessary step in the abolition of capitalism. 
+
+
+
