@@ -14,6 +14,7 @@ image:
   caption: 'Photo by <a href="https://unsplash.com/@ev">ev</a> on <a href="https://unsplash.com/">Unsplash</a>'
   focal_point: 'center'
   preview_only: no
+  placement: 1
 projects: []
 ---
 
