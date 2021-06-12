@@ -31,28 +31,12 @@ ol.source-text {
   }
 }
 
-.bust-out-with-max-width {
-  margin: calc(50vw - 50%);
-  max-width: 2060px;
+.article-container {
+  max-width: 960px;
+  padding: 0 20px 0 20px;
+  margin: 0 auto 0 auto;
 }
 
-burst-out {
-    width:100%;
-    background:#000;
-    position:relative;
-    margin:0 auto;
-    color:#fff;
-    text-align:center;
-    }
-
-burst-out-img {
-    width: 150%;
-    margin: 0px 0 0 -10%;
-    position: relative;
-    display: block;
-    }
-
-	
 img[src$='#floatleft']
 {
 	float:left;

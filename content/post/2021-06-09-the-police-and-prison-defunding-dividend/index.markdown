@@ -29,7 +29,6 @@ It follows from the logic of the peace dividend that diverting resources from se
 
 Such gains are, of course, on top of immediate boon of restricting the coercive powers of the capitalist state. Even if divestment from policing and prisons weren't a good economic investment for society, it would **still be the correct path to follow.** 
 
-To "ask about alternatives to police," as [criminologist Luis Fernandez](https://www.mcgilldaily.com/PoliceIssue/Restorative-Justice.html) puts it, "is to ask the question of what are the alternatives to capitalism?" Abolition of the police a necessary step in ending the [inherently racist, oppressive, and violent order of capitalism](https://yellowheadinstitute.org/2020/07/15/police-brutality-in-canada-a-symptom-of-structural-racism-and-colonial-violence/) that police exist to enforce— but it just so happens that divestment also contains great economic potential. 
 
 {{< figure src="police_chart1.svg" alt="Graphic showing figures for spending on police of $15.1 billion and on prisons \$5.04 billion in 2017-2018.">}}
 
