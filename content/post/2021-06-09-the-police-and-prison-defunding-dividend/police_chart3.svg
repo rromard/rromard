@@ -14217,9 +14217,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.3269555"
-     inkscape:cx="624.22164"
-     inkscape:cy="723.29683"
+     inkscape:zoom="0.91349362"
+     inkscape:cx="670.1346"
+     inkscape:cy="746.19013"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -14242,7 +14242,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -17233,5 +17233,16 @@
          x="212.77725"
          y="352.96619"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Libre Franklin';-inkscape-font-specification:'Libre Franklin';stroke-width:0.264583">Data: StatCan; CSC</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:3.52777px;line-height:1.25;font-family:'Libre Franklin';-inkscape-font-specification:'Libre Franklin Bold';text-align:end;text-anchor:end;fill:#c7522b;fill-opacity:1;stroke-width:0.264583"
+       x="35.049004"
+       y="352.90268"
+       id="text3681"><tspan
+         sodipodi:role="line"
+         id="tspan3679"
+         x="35.049004"
+         y="352.90268"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-family:'Libre Franklin';-inkscape-font-specification:'Libre Franklin Bold';fill:#c7522b;fill-opacity:1;stroke-width:0.264583">DS4CS.NETLIFY.APP</tspan></text>
   </g>
 </svg>
