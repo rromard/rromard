@@ -11,7 +11,7 @@ authors: []
 lastmod: '2021-06-09T14:03:02-04:00'
 featured: no
 image:
-  caption: 'Photo by <a href="https://unsplash.com/@ev"> ev </a> on <a href="https://unsplash.com/"> Unsplash</a>'
+  caption: 'Photo by <a href="https://unsplash.com/@ev">ev</a> on <a href="https://unsplash.com/">Unsplash</a>'
   focal_point: 'center'
   preview_only: no
 projects: []
@@ -31,7 +31,7 @@ Such gains are, of course, on top of immediate boon of restricting the coercive 
 
 To "ask about alternatives to police," as [criminologist Luis Fernandez](https://www.mcgilldaily.com/PoliceIssue/Restorative-Justice.html) puts it, "is to ask the question of what are the alternatives to capitalism?" Abolition of the police a necessary step in ending the [inherently racist, oppressive, and violent order of capitalism](https://yellowheadinstitute.org/2020/07/15/police-brutality-in-canada-a-symptom-of-structural-racism-and-colonial-violence/) that police exist to enforce— but it just so happens that divestment also contains great economic potential. 
 
-{{< figure src="police_chart1.svg">}}
+{{< figure src="police_chart1.svg" alt="Graphic showing figures for spending on police of $15.1 billion and on prisons \$5.04 billion in 2017-2018.">}}
 
 Many Canadians will be shocked to learn how much of society's resources are wasted on policing and incarceration. In 2017-2018, the year that this analysis focuses on, all levels of Canadian governments (federal, provincial and local) spent a combined $20.5B on policing and the prisons. That's almost as much as that year's [entire military budget](https://www.macrotrends.net/countries/CAN/canada/military-spending-defense-budget) of \$22B. If all of policing and prisons funding were grouped together as an item on the 2017-2018 Federal Budget, it would have been one the largest expenses of public funds by the government that year. 
 
