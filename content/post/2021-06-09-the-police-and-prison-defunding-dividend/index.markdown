@@ -65,7 +65,7 @@ Defunding police and prisons by 70% would have raised funds of about $14.13B in 
 
 By reinvesting that funding from sectors that are probably destructive of value into sectors that are actually economically and socially useful, an estimated surplus of \$6.59B of goods and services would be produced. This is the concept of the Police and Prison Dividend in action:
 
-{{< figure src="police_chart2.svg">}}
+{{< figure src="police_chart2.svg" alt="Graphic with two bar charts showing the police and prison dividend. The left side bar chart shows \$14.3 billion raised with 70% of police and prison money. In the middle, it shows how police and prison funds can be divided into five equal parts of \$2.87 billion to be reinvested into the following sectors, with their economic multiplier and new total: Transit systems $6.59 billion (2.33),  social assistance \$3.64 billion (1.29), public education \$3.61 billion (1.28), public healthcare \$3.61 billion (1.24), and First Nations Government \$3.39 (1.20).">}}
 
 ## Ending the waste of police and prisons leads to a jobs windfall
 
@@ -79,7 +79,7 @@ Likewise, the economic and human costs of incarceration are [notoriously egregio
 
 A tide of job creation rolls in with the police and prison dividend, with an estimated 270,000+ jobs created. Even when accounting for the reduction in staffing levels in prisons and police forces, an estimated surplus of just under 190,000 jobs would be produced. Therein lies the essence of the police and prison dividend. A billion dollars of investment in prisons, for example, equated to about 3400 jobs, while the same investment in the social assistance sector would produce an estimated 23,400 jobs. 
 
-{{< figure src="police_chart3.svg">}}
+{{< figure src="police_chart3.svg" alt="Top and bottom pictographs showing the number of jobs created, where one human pictogram equals 1000 jobs. On the top, jobs created by status quo police and prison spending are shown. The bracketed figures after the economic sector indicated the number of jobs created per million in spending. The job total is 115,461 with 98,077 in policing (6.5) and 17,384 in prisons (3.4). On the bottom, job growth from an equivalent investment in public sectors are shown. The job total from public services is 270,254 with 67,566 in transit systems (23.9), 66,280 jobs in social assistance (23.4), 50,079 jobs in First Nations governments (18), 45,006 in public healthcare (15.9) and 40,612 public education (14.4). Overall, investment in public and social services creates a surplus of 154,793 jobs are created compared to the status quo police and prison spending.">}}
 
 ## Key assumptions of the Police and Prison Dividend
 
@@ -138,11 +138,11 @@ On the other hand, there are also likely sources of underestimation. Should the 
 
 For the sake of simplifying the initial analysis, geographic differences in the distribution of police and prison and redistribution of those funds into public and social services are abstracted away. StatCan does produce multiplier figures at the provincial level based on an inter-provincial input-output model. A next step is to account for the spatial dimension of police/prison divestment. It may end up being more fruitful to estimate the local or regional impacts of divestment in the future.
 
-#### Keyensian versus Marxist multipliers
+#### Keynesian versus Marxist multipliers
 
-There are more issues related to the use of input-output multipliers, often called Keyensian multipliers, and the ultimately faulty analysis of capitalist political economy advanced by Keyensian economics. The [conventional Keyensian multiplier](https://thenextrecession.wordpress.com/2012/06/13/keynes-the-profits-equation-and-the-marxist-multiplier/) relies on an understanding that consumption and not profitability is the main driver of investment under capitalism. 
+There are more issues related to the use of input-output multipliers, often called Keynesian multipliers, and the ultimately faulty analysis of capitalist political economy advanced by Keynesian economics. The [conventional Keynesian multiplier](https://thenextrecession.wordpress.com/2012/06/13/keynes-the-profits-equation-and-the-marxist-multiplier/) relies on an understanding that consumption and not profitability is the main driver of investment under capitalism. 
 
-That means that if changes in public investment move the [average profitability of capital](https://thenextrecession.wordpress.com/2013/01/13/multiplying-multipliers/), the indirect and induced growth and job creation figures implied by the conventional multipliers will be off. Of course, it is also worth noting that nation-wide divestment from police and prisons at such a scale is not an incremental reform in a Keyensian stimulus package— defunding must be a movement towards abolition of the police, the violent enforcers of capitalist order, which itself is a necessary step in the abolition of capitalism. 
+That means that if changes in public investment move the [average profitability of capital](https://thenextrecession.wordpress.com/2013/01/13/multiplying-multipliers/), the indirect and induced growth and job creation figures implied by the conventional multipliers will be off. Of course, it is also worth noting that nation-wide divestment from police and prisons at such a scale is not an incremental reform in a Keynesian stimulus package— defunding must be a movement towards abolition of the police, the violent enforcers of capitalist order, which itself is a necessary step in the abolition of capitalism. 
 
 ## Data sources
 
