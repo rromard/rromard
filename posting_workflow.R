@@ -9,6 +9,7 @@ check_hugo()
 blogdown::check_site()
 
 # Set up live serve
+stop_server()
 serve_site()
 
 # Post 1: CEWS: A scandalous gift to capital; 15-05-2021
@@ -34,3 +35,11 @@ blogdown::new_post(title = "The Police and Prison Defunding Dividend",
 
 ## Post 3: Index file
 navigateToFile("content/post/2021-06-09-the-police-and-prison-dividend/index.Rmarkdown")
+
+# Post 4: Racism, patriarchy, and superexploitation 
+blogdown::new_post(title = "Superexploitation: capitalism needs racism and patriarchy", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
+## Post 4: Index file
+navigateToFile("content/post/2021-06-15-superexploitation-capitalism-needs-racism-and-patriarchy/index.Rmarkdown")
