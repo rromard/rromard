@@ -1,11 +1,11 @@
 ---
-title: Canadian Fossil-Capitalism's Climate Contradictions
+title: "Canadian Fossil-Capitalism's Climate Contradictions (Part One)"
 author: Ryan Romard
 date: '2021-07-06'
 slug: canadian-fossil-capitalism-s-climate-contradictions
 categories: []
 tags: []
-subtitle: "As the climate crisis unfolds before our eyes, why is a dominant faction of the Canadian ruling class so driven to expand fossil fuel production, no matter the consequences?"
+subtitle: "Part one: The oversized role of the fossil fuel industry in Canadian capitalism"
 summary: "Have you ever wondered why Canada exists as such a hot mess of climate contradictions? This is the first in a series of posts on Canadian capitalism's climate contradictions and Canada's massively oversized role in driving the climate crisis. Fossil capital exercises considerable economic and political clout in Canada because it has been an extremely important site for new investment, commands huge amounts of capital, and produces the nation's most important trade goods."
 authors: []
 lastmod: '2021-07-06T17:58:36-04:00'
@@ -14,7 +14,6 @@ image:
   focal_point: 'center'
   caption: 'Photo by <a href="https://unsplash.com/@robin_sommer?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Robin Sommer</a> on <a href="https://unsplash.com/?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>'
 projects: []
-draft: true
 ---
 
 
