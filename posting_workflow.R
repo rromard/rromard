@@ -43,3 +43,11 @@ blogdown::new_post(title = "Superexploitation: capitalism needs racism and patri
 
 ## Post 4: Index file
 navigateToFile("content/post/2021-06-15-superexploitation-capitalism-needs-racism-and-patriarchy/index.Rmarkdown")
+
+# Post 5: Racism, patriarchy, and superexploitation 
+blogdown::new_post(title = "Canadian Fossil-Capitalism's Climate Contradictions", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
+## Post 5: Index file
+navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")
