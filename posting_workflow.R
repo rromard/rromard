@@ -44,10 +44,15 @@ blogdown::new_post(title = "Superexploitation: capitalism needs racism and patri
 ## Post 4: Index file
 navigateToFile("content/post/2021-06-15-superexploitation-capitalism-needs-racism-and-patriarchy/index.Rmarkdown")
 
-# Post 5: Racism, patriarchy, and superexploitation 
+# Post 5: Canadian Capitalism's Climate Contradictions 
 blogdown::new_post(title = "Canadian Fossil-Capitalism's Climate Contradictions", 
                    ext = '.Rmarkdown', 
                    subdir = "post")
 
 ## Post 5: Index file
 navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")
+
+# Post 6: US Empire's War on Cuba in the 21st Century
+blogdown::new_post(title = "The US Empire's economic war on Cuba in the 21st Century", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
