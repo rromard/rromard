@@ -56,3 +56,8 @@ navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-con
 blogdown::new_post(title = "The US Empire's economic war on Cuba in the 21st Century", 
                    ext = '.Rmarkdown', 
                    subdir = "post")
+
+# Post 7: Canadian Capitalism's Climate Contradictions Part 2
+blogdown::new_post(title = "Canadian Fossil-Capitalism's Climate Contradictions (Part 2)", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
