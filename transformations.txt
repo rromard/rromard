@@ -1,0 +1,4 @@
+[1] "Removed non-UTF8 characters"      "Removed HTML tags and symbols"   
+[3] "Converted all text to lower case" "Removed all URLs"                
+[5] "Removed extra white space"        "Tokenized text (word level)"     
+[7] "Removed english stopwords"       

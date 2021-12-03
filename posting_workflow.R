@@ -12,6 +12,8 @@ blogdown::check_site()
 stop_server()
 serve_site()
 
+##### Story Posts
+
 # Post 1: CEWS: A scandalous gift to capital; 15-05-2021
 blogdown::new_post(title = "Canada Emergency Wage Subsidy: A scandalous gift to capital", 
                    ext = '.Rmarkdown', 
@@ -61,3 +63,21 @@ blogdown::new_post(title = "The US Empire's economic war on Cuba in the 21st Cen
 blogdown::new_post(title = "Canadian Fossil-Capitalism's Climate Contradictions (Part 2)", 
                    ext = '.Rmarkdown', 
                    subdir = "post")
+
+##### Learning posts
+
+# Lesson 1: Data Wrangling: Checking in on the CEWS
+blogdown::new_post(title = "Data Wrangling for the Left: Checking in on the Canada Emergency Wage Subsidy", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
+# Index file
+navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")
+
+# Lesson 2: Data Visualization: Bullet charts
+blogdown::new_post(title = "Make more impactful comparisons with bullet charts using ggplot2", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
+# Index file
+navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")

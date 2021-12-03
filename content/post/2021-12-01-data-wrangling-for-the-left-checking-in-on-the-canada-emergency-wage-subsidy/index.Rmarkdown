@@ -66,13 +66,13 @@ library(tidyverse)
 Sometimes you will need to load many packages at the start of a workflow. In order to avoid re-typing a library function a dozen times, use the [pacman package](http://trinker.github.io/pacman/vignettes/Introduction_to_pacman.html) to load in all of the needed packages at the same time. The `p_load` function will load each package and by default attempt to install any package that isn't currently installed. To stop `pacman` from installing missing packages or updating out of date packages, set the `install` and `update` arguments to `FALSE`. 
 
 ```{r}
-pacman::p_load(tidyverse, janitor, here, lubridate)
+pacman::p_load(tidyverse, janitor, here, lubridate, cansim, zoo)
 ```
 
-It's not uncommon to find that code that once worked fine will break when revisited in the future. Usually, this is caused by differences in the versions of packages as they are updated over time. So the first layer of reproducibility is keeping track of and being transparent about the version history of packages used. With the `sessionInfo` function, you can retrieve the versions of all packages used. This shouldn't be an issue for this analysis, but specific versions of most package can be found using the archived [MRAN Repository Snapshots](https://mran.microsoft.com/documents/rro/reproducibility). 
+It's not uncommon to find that code that once worked fine will break when revisited in the future. Usually, this is caused by differences in the versions of packages as they are updated over time. So the first layer of reproducibility is keeping track of and being transparent about the version history of packages used. With the `sessioninfo::package_info()` function, you can retrieve the versions of all packages loaded in the current R session. This shouldn't be an issue for this analysis, but specific versions of most package can be found using the archived [MRAN Repository Snapshots](https://mran.microsoft.com/documents/rro/reproducibility). 
 
 ```{r}
-sessioninfo::session_info()[[2]]
+sessioninfo::package_info()
 ```
 
 ## Wrangling data from Canada's National Lobbyist Registry
@@ -321,9 +321,6 @@ For those researching the settler colonial-capitalist entity of Canada, there is
 
 
 ```{r warning=FALSE}
-library(cansim)
-library(zoo)
-
 profits_naics_raw <- get_cansim('33-10-0226-01') %>%  # major NAICS categories 
   clean_names() %>%
   select(ref_date, naics = 4, naics_code = 18, components = 5, value) 
