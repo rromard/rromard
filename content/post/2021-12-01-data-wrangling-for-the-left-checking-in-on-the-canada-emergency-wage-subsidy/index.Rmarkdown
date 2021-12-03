@@ -66,7 +66,7 @@ library(tidyverse)
 Sometimes you will need to load many packages at the start of a workflow. In order to avoid re-typing a library function a dozen times, use the [pacman package](http://trinker.github.io/pacman/vignettes/Introduction_to_pacman.html) to load in all of the needed packages at the same time. The `p_load` function will load each package and by default attempt to install any package that isn't currently installed. To stop `pacman` from installing missing packages or updating out of date packages, set the `install` and `update` arguments to `FALSE`. 
 
 ```{r}
-pacman::p_load(tidyverse, janitor, here, lubridate, cansim, zoo)
+pacman::p_load(tidyverse, janitor, here, lubridate, cansim, zoo, sessioninfo)
 ```
 
 It's not uncommon to find that code that once worked fine will break when revisited in the future. Usually, this is caused by differences in the versions of packages as they are updated over time. So the first layer of reproducibility is keeping track of and being transparent about the version history of packages used. With the `sessioninfo::package_info()` function, you can retrieve the versions of all packages loaded in the current R session. This shouldn't be an issue for this analysis, but specific versions of most package can be found using the archived [MRAN Repository Snapshots](https://mran.microsoft.com/documents/rro/reproducibility). 
