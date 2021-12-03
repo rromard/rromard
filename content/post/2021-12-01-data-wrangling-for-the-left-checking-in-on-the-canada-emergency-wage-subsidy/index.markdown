@@ -86,14 +86,14 @@ Sometimes you will need to load many packages at the start of a workflow. In ord
 
 
 ```r
-pacman::p_load(tidyverse, janitor, here, lubridate)
+pacman::p_load(tidyverse, janitor, here, lubridate, cansim, zoo, sessioninfo)
 ```
 
-It's not uncommon to find that code that once worked fine will break when revisited in the future. Usually, this is caused by differences in the versions of packages as they are updated over time. So the first layer of reproducibility is keeping track of and being transparent about the version history of packages used. With the `sessionInfo` function, you can retrieve the versions of all packages used. This shouldn't be an issue for this analysis, but specific versions of most package can be found using the archived [MRAN Repository Snapshots](https://mran.microsoft.com/documents/rro/reproducibility). 
+It's not uncommon to find that code that once worked fine will break when revisited in the future. Usually, this is caused by differences in the versions of packages as they are updated over time. So the first layer of reproducibility is keeping track of and being transparent about the version history of packages used. With the `sessioninfo::package_info()` function, you can retrieve the versions of all packages loaded in the current R session. This shouldn't be an issue for this analysis, but specific versions of most package can be found using the archived [MRAN Repository Snapshots](https://mran.microsoft.com/documents/rro/reproducibility). 
 
 
 ```r
-sessioninfo::session_info()[[2]]
+sessioninfo::package_info()
 ```
 
 ```
@@ -105,6 +105,7 @@ sessioninfo::session_info()[[2]]
 ##  bookdown      0.22    2021-04-22 [1] CRAN (R 4.0.5)
 ##  broom         0.7.1   2020-10-02 [1] CRAN (R 4.0.2)
 ##  bslib         0.2.5.1 2021-05-18 [1] CRAN (R 4.0.5)
+##  cansim      * 0.3.5   2020-03-13 [1] CRAN (R 4.0.3)
 ##  cellranger    1.1.0   2016-07-27 [1] CRAN (R 4.0.3)
 ##  cli           3.1.0   2021-10-27 [1] CRAN (R 4.0.5)
 ##  colorspace    2.0-1   2021-05-04 [1] CRAN (R 4.0.5)
@@ -131,6 +132,7 @@ sessioninfo::session_info()[[2]]
 ##  jquerylib     0.1.4   2021-04-26 [1] CRAN (R 4.0.5)
 ##  jsonlite      1.7.2   2020-12-09 [1] CRAN (R 4.0.5)
 ##  knitr         1.33.4  2021-05-21 [1] Github (yihui/knitr@a41ca9f)
+##  lattice       0.20-41 2020-04-02 [2] CRAN (R 4.0.3)
 ##  lifecycle     1.0.0   2021-02-15 [1] CRAN (R 4.0.5)
 ##  lubridate   * 1.7.10  2021-02-26 [1] CRAN (R 4.0.5)
 ##  magrittr      2.0.1   2020-11-17 [1] CRAN (R 4.0.5)
@@ -152,7 +154,7 @@ sessioninfo::session_info()[[2]]
 ##  rvest         1.0.2   2021-10-16 [1] CRAN (R 4.0.5)
 ##  sass          0.4.0   2021-05-12 [1] CRAN (R 4.0.5)
 ##  scales        1.1.1   2020-05-11 [1] CRAN (R 4.0.3)
-##  sessioninfo   1.2.1   2021-11-02 [1] CRAN (R 4.0.5)
+##  sessioninfo * 1.2.1   2021-11-02 [1] CRAN (R 4.0.5)
 ##  snakecase     0.11.0  2019-05-25 [1] CRAN (R 4.0.3)
 ##  stringi       1.5.3   2020-09-09 [1] CRAN (R 4.0.3)
 ##  stringr     * 1.4.0   2019-02-10 [1] CRAN (R 4.0.3)
@@ -166,6 +168,7 @@ sessioninfo::session_info()[[2]]
 ##  xfun          0.24    2021-06-15 [1] CRAN (R 4.0.5)
 ##  xml2          1.3.2   2020-04-23 [1] CRAN (R 4.0.3)
 ##  yaml          2.2.1   2020-02-01 [1] CRAN (R 4.0.3)
+##  zoo         * 1.8-9   2021-03-09 [1] CRAN (R 4.0.5)
 ## 
 ##  [1] C:/Users/Ryan/Documents/R/win-library/4.0
 ##  [2] C:/Program Files/R/R-4.0.3/library
@@ -603,16 +606,14 @@ Now that the subsidy amount is treated as a number, we can calculate the percent
 ```r
 cews_size <- cews_size %>% 
   mutate(
-    across(c(subsidy, pct_total), as.numeric),
+    across(c(applications, subsidy, pct_total), as.numeric),
     pct_total_subsidy = round(subsidy/sum(subsidy), digits = 3))
 ```
 
-Write both files for safekeeping and further use.
+Write the subsidy by enterprise size data for future use.
 
 
 ```r
-# CEWS by industry
-write_rds(cews_size, here('ds4cs_working', 'posts', 'l1_cews_lesson', 'data', 'cews_naics.rds')) 
 # CEWS by enterprise size
 write_rds(cews_size, here('ds4cs_working', 'posts', 'l1_cews_lesson', 'data', 'cews_size.rds')) 
 ```
@@ -626,22 +627,6 @@ One step in the data wrangling process remains. This is the step that can take a
 For those researching the settler colonial-capitalist entity of Canada, there is an great abundance of open data on a huge number of topics available through Statistics Canada. Using the truly excellent [cansim package](https://cran.r-project.org/web/packages/cansim/vignettes/cansim.html), it's possible to import StatCan's CANSIM tables directly into an R session with the `get_cansim()` function. Below, we read in the [industry quarterly balance sheet table](https://www150.statcan.gc.ca/t1/tbl1/en/tv.action?pid=3310022601) by providing the table number as an argument. 
 
 
-
-```r
-library(cansim)
-library(zoo)
-```
-
-```
-## 
-## Attaching package: 'zoo'
-```
-
-```
-## The following objects are masked from 'package:base':
-## 
-##     as.Date, as.Date.numeric
-```
 
 ```r
 profits_naics_raw <- get_cansim('33-10-0226-01') %>%  # major NAICS categories 
