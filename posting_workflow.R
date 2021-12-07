@@ -72,7 +72,8 @@ blogdown::new_post(title = "Data Wrangling for the Left: Checking in on the Cana
                    subdir = "post")
 
 # Index file
-navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")
+navigateToFile("content/post/2021-12-01-data-wrangling-for-the-left-checking-in-on-the-canada-emergency-wage-subsidy\index.markdown")
+
 
 # Lesson 2: Data Visualization: Bullet charts
 blogdown::new_post(title = "Make more impactful comparisons with bullet charts using ggplot2", 
@@ -80,4 +81,4 @@ blogdown::new_post(title = "Make more impactful comparisons with bullet charts u
                    subdir = "post")
 
 # Index file
-navigateToFile("content/post/2021-07-06-canadian-fossil-capitalism-s-climate-contradictions/index.Rmarkdown")
+navigateToFile("content/post/2021-12-03-make-more-impactful-comparisons-with-bullet-charts-using-ggplot2/index.Rmarkdown")
