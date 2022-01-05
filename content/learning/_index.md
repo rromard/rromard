@@ -6,8 +6,6 @@ title: Learning Hub
 type: page
 ---
 
-## Under construction
-
 One of the long term goals for this site is to offer free learning resources on data science for the Left.
 The world is awash in massive amounts of introductory content on the basics of data science, data analytics, 
 and coding. My goal is to avoid duplicating much of that content by focusing on those topics from the perspective
@@ -20,4 +18,4 @@ Some of the topics covered will likely include:
 - Data visualization and data-driven storytelling
 - Basic aspects of coding, statistics, and data science
 
-## Under construction
+# DS4CS Data Science Courses
