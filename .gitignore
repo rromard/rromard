@@ -7,3 +7,7 @@ Thumbs.db
 /public/
 /resources/
 /ds4cs_working
+.httr-oauth
+/code_chunks
+setup_ongoing.
+posting_workflow.R
