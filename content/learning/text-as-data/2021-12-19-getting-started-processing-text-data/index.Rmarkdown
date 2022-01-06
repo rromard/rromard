@@ -819,7 +819,7 @@ c3_word_tidy
 
 Before we deal with the tidy text, there is one bit of housekeeping to take care of. It's always a good idea to keep your raw, uncleaned and untokenized texts safely tucked away somewhere. You never know when you might need to revisit the original texts. Perhaps at some unforeseen point during an analysis/project, you might be wishing you hadn't prematurely removed some stop words, punctuation, word padding, symbols and so on. It's also entirely possible that you may find another use for the data in the future with totally different pre-processing and/or tokenization requirements. If you saved your raw texts, no problem, you can start fresh again!
 
-Below, we'll bind the raw text tibbles together and squirrel them away with `write_rds()`. I'm sure this will be useful down the road.
+Below, we'll label the html text as belonging to Volume I, bind the raw text tibbles together and squirrel them away with `write_rds()`. I'm sure this will be useful down the road.
 
 ```{r, eval=FALSE}
 capitals_raw <- c1_html_text %>% 

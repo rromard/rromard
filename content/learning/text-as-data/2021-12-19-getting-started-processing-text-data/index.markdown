@@ -1038,27 +1038,28 @@ tidy_text_cat <- function(df, text_var, ...) {
     summarise(text = str_c(!!text_var_enquo, collapse = " ", sep = " "))
 }
 
-c2_pdf_untidy <- c2_pdf_tidy %>% 
-  tidy_text_cat(word, page, chapter, title)
+c2_pdf_untidy <- c2_pdf_text %>% 
+  tidy_text_cat(text, page, ch_num = chapter, ch_title = title) %>% 
+  mutate(book = "Capital, Vol. II")
 
 c2_pdf_untidy
 ```
 
 ```
-## # A tibble: 299 x 4
-## # Groups:   page, chapter [299]
-##     page chapter title                        text                              
-##    <dbl>   <dbl> <chr>                        <chr>                             
-##  1    20       1 The Circuit of Money Capital subsistence and means of producti~
-##  2    21       1 The Circuit of Money Capital we have seen on previous occasion~
-##  3    22       1 The Circuit of Money Capital this movement is represented by m~
-##  4    23       1 The Circuit of Money Capital whatever the social form of produ~
-##  5    24       1 The Circuit of Money Capital iron brussels lace sulphuric acid~
-##  6    25       1 The Circuit of Money Capital unchanging value from the form of~
-##  7    26       1 The Circuit of Money Capital threw this increased value on the~
-##  8    27       1 The Circuit of Money Capital we have then two kinds of observa~
-##  9    28       1 The Circuit of Money Capital but this is expressed only as a r~
-## 10    29       1 The Circuit of Money Capital circulates as money it assumes th~
+## # A tibble: 299 x 5
+## # Groups:   page, ch_num [299]
+##     page ch_num ch_title                     text                       book    
+##    <dbl>  <dbl> <chr>                        <chr>                      <chr>   
+##  1    20      1 The Circuit of Money Capital subsistence and means of ~ Capital~
+##  2    21      1 The Circuit of Money Capital We have seen on previous ~ Capital~
+##  3    22      1 The Circuit of Money Capital This movement is represen~ Capital~
+##  4    23      1 The Circuit of Money Capital Whatever the social form ~ Capital~
+##  5    24      1 The Circuit of Money Capital iron, Brussels lace, sulp~ Capital~
+##  6    25      1 The Circuit of Money Capital unchanging value from the~ Capital~
+##  7    26      1 The Circuit of Money Capital threw this increased valu~ Capital~
+##  8    27      1 The Circuit of Money Capital We have, then, two kinds ~ Capital~
+##  9    28      1 The Circuit of Money Capital But this is expressed onl~ Capital~
+## 10    29      1 The Circuit of Money Capital circulates as money. It a~ Capital~
 ## # ... with 289 more rows
 ```
 
@@ -1071,21 +1072,21 @@ c2_pdf_untidy %>%
 ```
 
 ```
-## # A tibble: 205,254 x 3
-## # Groups:   page, chapter [299]
-##     page chapter ngram                   
-##    <dbl>   <dbl> <chr>                   
-##  1    20       1 subsistence and means   
-##  2    20       1 and means of            
-##  3    20       1 means of production     
-##  4    20       1 of production are       
-##  5    20       1 production are separated
-##  6    20       1 are separated from      
-##  7    20       1 separated from the      
-##  8    20       1 from the owner          
-##  9    20       1 the owner of            
-## 10    20       1 owner of labour_power   
-## # ... with 205,244 more rows
+## # A tibble: 209,464 x 3
+## # Groups:   page, ch_num [299]
+##     page ch_num ngram                   
+##    <dbl>  <dbl> <chr>                   
+##  1    20      1 subsistence and means   
+##  2    20      1 and means of            
+##  3    20      1 means of production     
+##  4    20      1 of production are       
+##  5    20      1 production are separated
+##  6    20      1 are separated from      
+##  7    20      1 separated from the      
+##  8    20      1 from the owner          
+##  9    20      1 the owner of            
+## 10    20      1 owner of labour         
+## # ... with 209,454 more rows
 ```
 
 ## Capital Vol. III: Tidy scraping MS Word `.doc` and `.docx` files with `officer`
@@ -1218,11 +1219,11 @@ From there, we'll use `mutate` to :
 4. Using `str_extract` and regular expressions to extract the chapter titles following the characters `"chapter <digits>."`
 5. Replace all hyphens in complex words to keep the word pairings together during tokenization
 
-After that, `fill()` is used again to carry the extracted chapter data down through the missing rows, only relevant columns are included with `select`, then the text is tokenized into words using `unnest_tokens()`.
+After that, `fill()` is used again to carry the extracted chapter data down through the missing rows, only relevant columns are included with `select`. We'll stop short of unnesting the text at this point, since it is good practice to keep around an original copy of the text in addition to your tokenized version.
 
 
 ```r
-c3_word_tidy <- c3_word_paragraphs %>% 
+c3_word_paragraphs <- c3_word_paragraphs %>% 
   mutate(style_name = ifelse(is.na(style_name), "text", style_name),
          book = "Capital, Vol. III",
          title = ifelse(style_name == "heading 2", text, NA),
@@ -1232,30 +1233,53 @@ c3_word_tidy <- c3_word_paragraphs %>%
   fill(title, .direction = "down") %>% 
   fill(chapter, .direction = "down") %>% 
   filter(style_name != "heading 2") %>% 
-  select(book, chapter, chapter, text) %>% 
+  select(book, ch_num = chapter, ch_title = title, text)
+```
+
+Finally the text is tokenized into words using `unnest_tokens()`.
+
+
+```r
+c3_word_tidy <- c3_word_paragraphs %>% 
   unnest_tokens(word, text)
 
 c3_word_tidy
 ```
 
 ```
-## # A tibble: 346,809 x 3
-##    book              chapter word      
-##    <chr>               <dbl> <chr>     
-##  1 Capital, Vol. III       1 in        
-##  2 Capital, Vol. III       1 book      
-##  3 Capital, Vol. III       1 i         
-##  4 Capital, Vol. III       1 we        
-##  5 Capital, Vol. III       1 analysed  
-##  6 Capital, Vol. III       1 the       
-##  7 Capital, Vol. III       1 phenomena 
-##  8 Capital, Vol. III       1 which     
-##  9 Capital, Vol. III       1 constitute
-## 10 Capital, Vol. III       1 the       
+## # A tibble: 346,809 x 4
+##    book              ch_num ch_title              word      
+##    <chr>              <dbl> <chr>                 <chr>     
+##  1 Capital, Vol. III      1 cost-price and profit in        
+##  2 Capital, Vol. III      1 cost-price and profit book      
+##  3 Capital, Vol. III      1 cost-price and profit i         
+##  4 Capital, Vol. III      1 cost-price and profit we        
+##  5 Capital, Vol. III      1 cost-price and profit analysed  
+##  6 Capital, Vol. III      1 cost-price and profit the       
+##  7 Capital, Vol. III      1 cost-price and profit phenomena 
+##  8 Capital, Vol. III      1 cost-price and profit which     
+##  9 Capital, Vol. III      1 cost-price and profit constitute
+## 10 Capital, Vol. III      1 cost-price and profit the       
 ## # ... with 346,799 more rows
 ```
 
 ## Binding all three volumes of Capital for final text cleaning
+
+Before we deal with the tidy text, there is one bit of housekeeping to take care of. It's always a good idea to keep your raw, uncleaned and untokenized texts safely tucked away somewhere. You never know when you might need to revisit the original texts. Perhaps at some unforeseen point during an analysis/project, you might be wishing you hadn't prematurely removed some stop words, punctuation, word padding, symbols and so on. It's also entirely possible that you may find another use for the data in the future with totally different pre-processing and/or tokenization requirements. If you saved your raw texts, no problem, you can start fresh again!
+
+Below, we'll label the html text as belonging to Volume I, bind the raw text tibbles together and squirrel them away with `write_rds()`. I'm sure this will be useful down the road.
+
+
+```r
+capitals_raw <- c1_html_text %>% 
+  mutate(book = "Capital, Vol. I") %>% 
+  bind_rows(c2_pdf_untidy) %>% 
+  bind_rows(c3_word_paragraphs) %>% 
+  select(book, ch_title, ch_num, page, text) %>% 
+  filter(text != " ")
+
+write_rds(capitals_raw)
+```
 
 Now that we have all three volumes of Capital as tibbles of tidy word-tokens, they can be bound together into a single dataframe. The text data will still need some more cleaning and processing before it can be used for modeling or other purposes. 
 
@@ -1358,6 +1382,8 @@ capitals_corpus_tidy
 ## # ... with 283,089 more rows
 ```
 
+### Saving the raw texts for safe-keeping
+
 ## How to use tidy text: Exploring the Capitals corpus
 
 ### Counting and visualizing tidy text
@@ -1384,7 +1410,7 @@ capitals_corpus_tidy %>%
   labs(x = "Chapter", y = "% of book word count", caption = "Data: MIA")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-44-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-46-1.svg" width="672" />
 
 We can begin to get a picture of what each volume is about by counting the most frequently used terms. Below we `count` the number of each word by `book`, then take the top 10 most frequent words with `slice_max` and plot them with a faceted bar plot.
 
@@ -1407,7 +1433,7 @@ capitals_corpus_tidy %>%
   labs(x = NULL, y = "Word count", caption = "Data: MIA")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-45-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-47-1.svg" width="672" />
 
 ### Calculating summary statistics on tidy text
 
