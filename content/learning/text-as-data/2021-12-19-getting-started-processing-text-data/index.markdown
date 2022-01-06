@@ -1382,8 +1382,6 @@ capitals_corpus_tidy
 ## # ... with 283,089 more rows
 ```
 
-### Saving the raw texts for safe-keeping
-
 ## How to use tidy text: Exploring the Capitals corpus
 
 ### Counting and visualizing tidy text

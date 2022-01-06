@@ -896,8 +896,6 @@ capitals_corpus_tidy <- capitals_tidy %>%
 capitals_corpus_tidy
 ```
 
-### Saving the raw texts for safe-keeping
-
 ## How to use tidy text: Exploring the Capitals corpus
 
 ### Counting and visualizing tidy text
