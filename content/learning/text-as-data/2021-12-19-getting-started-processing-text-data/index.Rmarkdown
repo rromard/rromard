@@ -172,7 +172,7 @@ In the lesson that follows, we'll learn how to use a tidy workflow to scrape, cl
 
 Reminder that scraping data can have real world ethical implications and, in some jurisdictions like Canada, [legal consequences](https://www.canadianlawyermag.com/news/opinion/federal-court-makes-clear-website-scraping-is-illegal/276128). It's beyond the scope of the article to go into this in too much detail. Suffice it to say, before you scrape, it's worth asking yourself some questions about the [ethics and legality of data scraping](https://monashdatafluency.github.io/python-web-scraping/section-5-legal-and-ethical-considerations/) in the given context and doing a bit of investigation if needed.
 
-Many websites will have a [`robot.txt` file](https://levelup.gitconnected.com/how-to-understand-a-robots-txt-file-667246d7fa18) that will define what actions simualted users or bots can undertake. It's possible to break a website by accidentally by simulating a denial-of-service (DOS) attack with an overwhelming number of requests at very high speeds; a user can only click so many links in a given time, while a machine can do it exponentially faster. Typically, `robots.txt` will define a delay time between crawl actions in order to limit requests to a reasonable volume and prevent their servers from being overwhelmed.
+Many websites will have a [`robot.txt` file](https://levelup.gitconnected.com/how-to-understand-a-robots-txt-file-667246d7fa18) that will define what actions simulated users or bots can undertake. It's possible to break a website by accidentally by simulating a denial-of-service (DOS) attack with an overwhelming number of requests at very high speeds; a user can only click so many links in a given time, while a machine can do it exponentially faster. Typically, `robots.txt` will define a delay time between crawl actions in order to limit requests to a reasonable volume and prevent their servers from being overwhelmed.
 
 In the case of the MIA, it seems quite reasonable to assume that scraping is perfectly allowable. The site admins address scraping in the [site FAQ](https://www.marxists.org/admin/janitor/faq.htm#hdd) and suggest several methods for doing so.  The admin of MIA stipulate a crawl delay in their FAQ: "Note that you must limit your download to reasonable rates (request interval ca. 500ms — 1 second)."
 
@@ -180,7 +180,7 @@ In the case of the MIA, it seems quite reasonable to assume that scraping is per
 
 ### The fundamentals of importing html text into R
 
-First at the plate for scraping is text data stored on html webpages. Imagine how much text data in html work exists in the world: basically every website that exists as at least *some* text in it and many of the have *lots* of text. Learning how to scrape data of all kinds from the web is an essential skill for any citizen data scientist.
+First at the plate for scraping is text data stored on html webpages. Imagine how much text data in html form exists in the world: basically every website that exists as at least *some* text in it and many of the have *lots* of text. Learning how to scrape data of all kinds from the web is an essential skill for any citizen data scientist.
 
 Below, I'll show a basic tidy workflow for scraping and cleaning text from html files with the `rvest` package, which is part of the `tidyverse` community of packages. By the end of this section, you will have a good impression of the main benefits of using a tidy approach to web scraping with `tidyverse` verb functions like `mutate` or `filter` from `dplyr` as well the pipe operator `%>%` from `magrittr`. 
 
@@ -233,7 +233,7 @@ Some people swear by using [selectorgadget](https://selectorgadget.com/), a Chro
 
 ### Scraping an entire book using dynamic link generation
 
-Quite often, when scraping data from the web, it will be necessary to gather data from more than just one website at a time. There are a few methods for doing this using a tidy workflow, but we're going to cover the most direct one, scraping multiple pages by iterating `read_html()` over a series of links. Now that we know where the chapter links are stored in the Capital Vol. I index page, it's possible to extract them and produce a data frame of links to feed into `read_html()`.  
+Quite often, when scraping data from the web, it will be necessary to gather it from more than just one website at a time. There are a few methods for doing this using a tidy workflow, but we're going to cover the most direct one, scraping multiple pages by iterating `read_html()` over a series of links. Now that we know where the chapter links are stored in the Capital Vol. I index page, it's possible to extract them and produce a data frame of links to feed into `read_html()`.  
 
 Commence by using rvest's `html_nodes()` function to select the page nodes that are tagged as hyperlinks with `"a"`, then pipe `%>%` the output into `html_attr` to access the chapter links within the node element `"href"`. In this case, we end up with the tail end of each link relative to the base URL of the book index page. The MIA also links to other content on book index pages such as other file formats for the text, external or biographical sources, audio, pictures, video, and so on. 
 
@@ -337,7 +337,7 @@ polite_scrape <- function(index_df) {
 }
 ```
 
-To scrape the html a dataframe list-column, just call `polite_scrape()` on the dataframe of links. Since this is scraping 33 chapters worth of html, it might take a few minutes to finish scraping.
+To establish a session and scrape the html for each link into a list-column, just call `polite_scrape()` on the dataframe of links. Since this is scraping 33 chapters worth of html, it might take a few minutes to finish scraping.
 
 ```{r, eval=FALSE}
 c1_html <- c1_links %>% 
@@ -354,7 +354,7 @@ c1_html$html %>% head(3)
 
 Recall the earlier discussion of the impermanence of `xml_document` objects in R. Since the object is represented by an external pointer (`externalptr` in R) it can **only exist within the span of one R session**. That means that if you tried to save these objects as an `.rds` R data object, they would be non-functional upon import. Running any sort of operation on them will only return an invalid external pointer error. For many reasons, it will be desirable to have access to the html objects without having to download them again. It will be impossible to write reproducible and reusable scraping code, nor proceed with much else that uses the scraped objects. Scraping tons of data from many webpages can sometimes take hours to complete, so it's absolutely essential to have easy access to it if that data is going to be useful in the future.
 
-The workaround to this is simply to **save** the `xml_document` objects containing the scraped html into actual `.html` files in storage in some external location. Below, we define a function to take a dataframe with a list-column of html objects and write them to disk. In this case, there is one html document for every chapter scraped, so each chapter is written as a separate `.html` file. Again, the writing process is wrapped in `try(silent = TRUE)` to keep an error from stopping the operation. If you are writing a large number of html files, `try()` is also a necessity, since one file with bad encoding in a batch of 10000 files can jam the process up with an error at any time.
+The workaround to this is simply to **save** the `xml_document` objects containing the scraped html into actual `.html` files in storage in some external location. Below, we define a function to take a dataframe with a list-column of html objects and writes them to disk. In this case, there is one html document for every chapter scraped, so each chapter is written as a separate `.html` file. Again, the writing process is wrapped in `try(silent = TRUE)` to keep an error from stopping the operation. If you are writing a large number of html files, `try()` is also a necessity, since one file with bad encoding in a batch of 10000 files can jam the process up with an error at any time.
 
 ```{r, eval=FALSE}
 # Write HTML files to disk
@@ -439,7 +439,7 @@ test_nodeset %>%
 
 Just like `read_html()`, the `rvest` functions for extracting the html nodes from the `xml_document` like `html_nodes()`, `html_elements()`, and `html_attrs()` are also non-vectorized and therefore only work on a single object at a time. This means that in order to work on dataframe columns, calls to these functions should be used within `mutate` and `map` as previously demonstrated.
 
-The code below takes us from a dataframe of scraped html objects to a tidy dataframe of text with one row per chapter section in the text. The chapter titles are extracted from the metadata stored in the head node of most html documents, the chapter numbers are also parsed from this information. Finally, the list-columns produced by `map()` are turned into a longer dataframe with `unnest`. It's worth mentioning that `html_attrs_dfr()` is a very useful way of getting the attributes out of a node set directly into a dataframe; often this works for extracting difficult to reach text data from the html.
+The code below takes us from a dataframe of scraped html objects to a tidy dataframe of text with one row per chapter section in the text. The chapter titles are extracted from the metadata stored in the head node of most html documents, the chapter numbers are also parsed from this information. Finally, the list-columns produced by `map()` are turned into a longer dataframe with `unnest`. It's worth mentioning that `html_attrs_dfr()` is a very useful way of getting the html attributes out of a node set directly into a dataframe; often this works for extracting difficult to reach text data from the html.
 
 ```{r}
 c1_html_text <- c1_html %>%
@@ -589,13 +589,13 @@ c2_pdf_text <-
 c2_pdf_text[[1]]
 ```
 
-Things are rarely so simple in a text scraping and cleaning process it seems. The chapter title do not carry the page number into the text column at all and the row with the chapter number has changed, from row 4 in non-chapter title pages, to row 2! The text chapter titles are on the chapter title pages in long format.
+Things are rarely so simple in a text scraping and cleaning process it seems. The first page of each chapter, with the chapter title on top of the `text` column, do not carry the page number at all. Even worse, the row with the chapter number has changed, from row 4 in non-chapter title pages, to row 2!
 
 ```{r}
 c2_pdf_text[[18]]
 ```
 
-We can grab the titles to rejoin to the data by filtering the dataframes in the list to rows with a line `height` of 21, indicating the title lines, then concatenating the chapter title strings together into one line. Since the first chapter title was not read in by `pdf_data` for some reason, add that in manually with `dplyr::add_row()`. The result is a table of chapter titles that can be rejoined with the original dataframe.
+The text chapter titles are on the chapter title pages in long format. We can grab the titles and assign them as a separate tibble `c2_pdf_titles` to rejoin to the original data. Start by filtering the list of dataframes with `rlist::list.filter()` to the chapter title pages only. Now that we have just the first page of each chapter, the title can be isolated by filtering for rows with a line `height` of 21, indicating the title lines. Following that chapter title strings are joined together into one line using `str_c()`. Since the first chapter title was not read in by `pdf_data` for some reason, add that in manually with `dplyr::add_row()`. The result is a table of chapter titles that can be rejoined with the original dataframe.
 
 ```{r}
 library(rlist)
@@ -655,6 +655,7 @@ c2_pdf_text <-  c2_pdf_text %>%
   fill(chapter, .direction = "up") %>% 
   left_join(c2_pdf_titles) 
 
+# Check for missing page or chapter numbers
 c2_pdf_text %>% 
   filter(is.na(page) | is.na(chapter))
 ```
@@ -683,8 +684,9 @@ tidy_text_cat <- function(df, text_var, ...) {
     summarise(text = str_c(!!text_var_enquo, collapse = " ", sep = " "))
 }
 
-c2_pdf_untidy <- c2_pdf_tidy %>% 
-  tidy_text_cat(word, page, chapter, title)
+c2_pdf_untidy <- c2_pdf_text %>% 
+  tidy_text_cat(text, page, ch_num = chapter, ch_title = title) %>% 
+  mutate(book = "Capital, Vol. II")
 
 c2_pdf_untidy
 ```
@@ -698,7 +700,7 @@ c2_pdf_untidy %>%
 
 ## Capital Vol. III: Tidy scraping MS Word `.doc` and `.docx` files with `officer`
 
-File formats associated with word processing software are one of the most abundant sources of text data out there, especially those associated with Microsoft Word. When working with a team of people, especially people who are usually doing non-data related tasks, you'll need to work with these types of documents often, especially MS Word or Google Docs. R has great integration with Docs, but that's a topic for another time. To complete the trilogy, we'll scrape the text of Capital Volume 3 from a MS Word `.doc` file.
+File formats associated with word processing software are one of the most abundant sources of text data out there, especially those associated with Microsoft Word and Google Docs. When working with a team of people, particularly people who are usually doing non-data related tasks, you'll need to work with these types of documents often. R has great integration with Docs, but that's a topic for another time. To complete the trilogy, we'll scrape the text of Capital Volume 3 from a MS Word `.doc` file.
 
 ### The perils of importing raw text from `.doc` files
 
@@ -764,7 +766,7 @@ c3_word_content %>%
   glimpse()
 ```
 
-First up, some basic cleaning. Using `slice`, the front matter of the book like table of contents, foreword, publishing information, needs to be lopped off. The purpose of this is to avoid thing like accidentally including the table of contents into a text-based model. With a small number of files, it's easy to inspect the dataframe to see where the main body text begins. 
+First up, some basic cleaning. Using `slice`, the front matter of the book like table of contents, foreword, publishing information, needs to be lopped off. The purpose of this is to avoid something like accidentally including the table of contents into a text-based model. With a small number of files, it's easy to inspect the dataframe to see where the main body text begins. 
 
 To prepare for working with the strings in the dataframe, all character columns are mutated into lower case using `str_to_lower()`. Using `filter()`, take only the rows with paragraph content (we can leave scraping the tables to another day), while also discarding headings 1 and 2. For now, we'll keep heading 2 since it contains some information on the chapters that we need.
 
@@ -788,10 +790,10 @@ From there, we'll use `mutate` to :
 4. Using `str_extract` and regular expressions to extract the chapter titles following the characters `"chapter <digits>."`
 5. Replace all hyphens in complex words to keep the word pairings together during tokenization
 
-After that, `fill()` is used again to carry the extracted chapter data down through the missing rows, only relevant columns are included with `select`, then the text is tokenized into words using `unnest_tokens()`.
+After that, `fill()` is used again to carry the extracted chapter data down through the missing rows, only relevant columns are included with `select`. We'll stop short of unnesting the text at this point, since it is good practice to keep around an original copy of the text in addition to your tokenized version.
 
 ```{r}
-c3_word_tidy <- c3_word_paragraphs %>% 
+c3_word_paragraphs <- c3_word_paragraphs %>% 
   mutate(style_name = ifelse(is.na(style_name), "text", style_name),
          book = "Capital, Vol. III",
          title = ifelse(style_name == "heading 2", text, NA),
@@ -801,13 +803,34 @@ c3_word_tidy <- c3_word_paragraphs %>%
   fill(title, .direction = "down") %>% 
   fill(chapter, .direction = "down") %>% 
   filter(style_name != "heading 2") %>% 
-  select(book, chapter, chapter, text) %>% 
+  select(book, ch_num = chapter, ch_title = title, text)
+```
+
+Finally the text is tokenized into words using `unnest_tokens()`.
+
+```{r}
+c3_word_tidy <- c3_word_paragraphs %>% 
   unnest_tokens(word, text)
 
 c3_word_tidy
 ```
 
 ## Binding all three volumes of Capital for final text cleaning
+
+Before we deal with the tidy text, there is one bit of housekeeping to take care of. It's always a good idea to keep your raw, uncleaned and untokenized texts safely tucked away somewhere. You never know when you might need to revisit the original texts. Perhaps at some unforeseen point during an analysis/project, you might be wishing you hadn't prematurely removed some stop words, punctuation, word padding, symbols and so on. It's also entirely possible that you may find another use for the data in the future with totally different pre-processing and/or tokenization requirements. If you saved your raw texts, no problem, you can start fresh again!
+
+Below, we'll bind the raw text tibbles together and squirrel them away with `write_rds()`. I'm sure this will be useful down the road.
+
+```{r, eval=FALSE}
+capitals_raw <- c1_html_text %>% 
+  mutate(book = "Capital, Vol. I") %>% 
+  bind_rows(c2_pdf_untidy) %>% 
+  bind_rows(c3_word_paragraphs) %>% 
+  select(book, ch_title, ch_num, page, text) %>% 
+  filter(text != " ")
+
+write_rds(capitals_raw)
+```
 
 Now that we have all three volumes of Capital as tibbles of tidy word-tokens, they can be bound together into a single dataframe. The text data will still need some more cleaning and processing before it can be used for modeling or other purposes. 
 
@@ -872,6 +895,8 @@ capitals_corpus_tidy <- capitals_tidy %>%
 
 capitals_corpus_tidy
 ```
+
+### Saving the raw texts for safe-keeping
 
 ## How to use tidy text: Exploring the Capitals corpus
 
