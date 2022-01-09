@@ -2,7 +2,7 @@
 title: "Tidy Text Scraping, Cleaning and Processing with Karl Marx and R"
 author: "Ryan Romard"
 date: '2021-12-19'
-slug: getting-started-processing-text-data
+slug: getting-started-scraping-and-processing-text-data
 categories: []
 tags: ['Text analysis']
 subtitle: Learn how to efficiently prepare a corpus of Marxist texts from web pages,

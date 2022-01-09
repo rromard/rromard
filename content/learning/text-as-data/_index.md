@@ -1,5 +1,5 @@
 ---
-title: "Using Text as Data with R to Advance the Cause of Socialism"
+title: "Using Text as Data with R"
 summary: 'We live in a digital capitalist world awash in unimaginable amounts of data. A considerable portion of that data takes the form of written language: websites, books, blogs, social media posts, tweets, search results, browser histories, survey data, the list goes on and on. The focus of this course will be on finding, preparing, and using text-as-data to advance the cause of socialism. The first few units will deal with scraping, cleaning, processing, and analyzing a collection of machine readable Marxist texts. As the course is updated with more units over time, it will expand into more real-word applications of text-as-data for socialists'
 date: 2021-12-09
 type: book
