@@ -31,8 +31,6 @@ The following tutorial demonstrates how to use `quanteda` to clean, manipulate, 
 
 For now, the learning will focus on what can be done with text-as-data without using sophisticated modeling or intense machine learning tools. Think of it as a *modeling light* approach to text analysis. Don't worry, we'll get to the fancy stuff, but another day! As the lesson in text analysis unfolds, I hope that we can benefit beginners to data science and Marxism alike by uncovering at least a few *minor* insights into Marx's critique of capitalist political economy (or CPE for short).
 
-#### Header on Quanteda
-
 Quanteda is a one-stop-shop package for the quantitative analysis of text data developed by a team of academic experts in text analysis. Actually, rather than just one package, it's more accurate to refer to a Quanteda ecosystem of packages that share a [design philosophy](https://quanteda.io/articles/pkgdown/design.html) and consistent user interface. The [base package]((https://quanteda.io/)) provides most of the functionality, with package extensions that add more features for text-based [statistics](https://cran.r-project.org/web/packages/quanteda.textstats/index.html), [modeling and scaling](https://cran.r-project.org/web/packages/quanteda.textmodels/index.html) and [visualization](https://cran.r-project.org/web/packages/quanteda.textplots/index.html). Quanteda has [extensive documentation](https://tutorials.quanteda.io/) that anyone interested in learning the program should read. A handy cheat sheet for Quanteda functions can be [found here](https://muellerstefan.net/files/quanteda-cheatsheet.pdf).
 
 {{< toc hide_on="xl" >}}
