@@ -60,6 +60,13 @@ cpe_texts <-
   )
 ```
 
+First, we'll load some required packages. You can download a list of the package versions used to create this analysis [here](package_dep.rds).
+
+
+```r
+pacman::p_load(tidyverse, here, glue, quanteda, update = FALSE)
+```
+
 A corpus is just a short hand way of saying a collection of text documents. In the `quanteda` approach to text analysis, the role of the corpus is to be a safe container for the original texts. This makes it possible to easily refer back to the unaltered texts even after extensive text processing and manipulation.
 
 Any workflow with `quanteda` begins at the ground floor by creating a [corpus object](https://tutorials.quanteda.io/basic-operations/corpus/corpus/), which is a [special class](https://quanteda.io/reference/corpus.html) designed to store an original corpus of texts along with associated document-level metadata. There are methods of producing a `quanteda` corpus from raw character vectors, data frames, and corpus objects of other [notable text analysis R packages](https://cran.r-project.org/web/packages/tm/index.html). 
@@ -645,7 +652,7 @@ cpe_histogram <- cpe_freq %>%
 cpe_histogram
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-26-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-27-1.svg" width="672" />
 
 Now we can see that small cluster of highly used terms observed in the frequency table above, way out in front of the pack: **Capital, value, production, labour, money, commodities**. Though we have already seen these term frequencies, now we have a visual sense of how important these terms are to the body of texts: they are by far the most well used implements in Marx's linguistic tool kit, the workhorse words in the CC.
 
@@ -700,7 +707,7 @@ cpe_book_histogram <- grouped_freq %>%
 cpe_book_histogram
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-29-1.svg" width="1152" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-30-1.svg" width="1152" />
 
 ### Grouping by multiple variables using `interaction()`
 
@@ -755,7 +762,7 @@ cpe_summary %>%
   labs(x = NULL, y = "Tokens per chapter")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-32-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-33-1.svg" width="672" />
 ### Visualizing corpus and document level word counts
 
 The next level down in text frequency based EDA, after exploring the overall distributions of features, is to look at the actual words or features themselves. Here is what the tall end of the distribution from the first histogram looks like up close, in full detail. To make the chart, just call `slice_max()` on the frequency dataframe to extract the desired number of terms and create a bar plot with `ggplot()` and `geom_col()`, mapping the term `frequency` to both the `x` and `y`. It's also usually advisable to turn the bar chart on it's side using `coord_flip()` so that the words can be presented the way they are read, horizontally.
@@ -774,7 +781,7 @@ cpe_freq %>%
   labs(x = NULL, y = "Term frequency")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-33-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-34-1.svg" width="672" />
 Well, we've already seen the top words in the entire corpus a few times now. What about checking the top words by frequency for each book next? When calling `textstat_frequency()` to group the data, set the number of words to return per book with `n`. Then we use `mutate` to set the factors levels for the books and words; `reorder_within` from `tidytext` is used to sort the factor levels by frequency for each book, so that the chart facets are all in order. 
 
 
@@ -802,7 +809,7 @@ wordcount_bars <- cpe_dfm %>%
 wordcount_bars
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-34-1.svg" width="960" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-35-1.svg" width="960" />
 
 As mentioned previously, text frequency based analysis has some serious limitations. We are running into one of them right here. With frequencies, it's possible to get an **often vague impression** of the topical or thematic content of a document. When we break the frequencies down by book, the most frequent terms across each book are **pretty much the same**. Other than showing that these words are used more in some books and reinforcing the notion that these terms are important to Marx's CPE, we don't really gain any new insight into how each document fits into the corpus.
 
@@ -833,7 +840,7 @@ cpe_dfm %>%
   labs(x = NULL, y = "Term frequency", caption = "Data: MIA")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-35-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-36-1.svg" width="672" />
 
 Unfortunately, that tiny increase in information comes at a price. We are taking a fine-grain look at text data, which is notoriously high dimensional already. As soon as we turn the corner, we run face first into the curse of dimensionality that plagues even moderately sized text data sets. 
 
@@ -897,7 +904,7 @@ tf_idf_lolli <- cpe_tfidf %>%
 tf_idf_lolli
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-37-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-38-1.svg" width="672" />
 
 Now we are getting somewhere! Based on the frequency analysis, we know well now that the most frequently used terms are shared between all three volumes. We can see quite a few words that correspond to fundamental concepts in Marx's critique of capitalism like labour, capital, value, money, commodity, and so on. Tf-idf indicates which frequently used words are distinctive to each book, giving more specific information on the topic content of each volume beyond the basic categories of CPE.
 
@@ -934,7 +941,7 @@ textplot_wordcloud(cpe_dfm,
                    rotation = 0)
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-38-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-39-1.svg" width="672" />
 
 We can get a quick glance at dozens to several hundred words from the corpus or document. This is much more informative than any of the previous term frequency based plots. It's also a good way to scan data for missed stop words or other undesirable features that might need removal. With 8 groups or fewer, `quanteda` can produce a grouped word clouds that are, at the very least, kind of neat to look at. This can be done by simply calling `textplot_wordcloud()` on a grouped DFM and setting the argument `comparison = TRUE`. 
 
@@ -951,7 +958,7 @@ cpe_dfm %>%
   )
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-39-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-40-1.svg" width="672" />
 
 It's also possible to use something like [ggwordcloud](https://cran.r-project.org/web/packages/ggwordcloud/vignettes/ggwordcloud.html) to produce word clouds within a grammar of graphics framework, then facet the chart out by document or chapter. That could be a good way of getting a simple overview of multiple frequency distributions of text at once. But we're not going to bother with that, instead we'll write a function to produce what I have called a **word stack** (I didn't invent this, but I can't find another name for it) that improves on the basic format of the word clouds: projecting text in space and weighing the size by some third variable.
 
@@ -974,6 +981,8 @@ ds4cs_wordstack <- function(df, ..., x = docfreq, group = group, n_max = 20, ove
   facet_wrap(vars({{group}}), nrow = 1, scales = "free_x") +
   theme_ds4cs() +
   theme(axis.text = element_blank(),
+        plot.title = element_text(size = 18),
+        plot.subtitle = element_text(size = 16),
         panel.grid.major.y = element_blank(),
         strip.text = element_text(size = 16, hjust = 0.5),
         plot.margin = margin(r = 10, unit = "mm")) +
@@ -988,12 +997,13 @@ The word stack places words in rank ordered columns of text, which are usually f
 freq_wordstack <- grouped_freq %>% 
   ds4cs_wordstack(y = rank, size = p, label = feature, color = group) +
   scale_color_cpe +
-  labs(y = "Ranked by % of total words used", subtitle = "Size proportionate to term's % of book's total word count")
+  labs(y = "Ranked by % of total words used", 
+       subtitle = "Size proportionate to term's % of book's total word count")
 
 freq_wordstack
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-41-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-42-1.svg" width="768" />
 
 It looks better than a word cloud, but doesn't tell us anything more than we have already learned. Here is a word stack using the top terms for each book by tf-idf with text size also weighted to tf-idf. It's the same information as the lollipop plot, but it's possible to put a few more words on there, though precision in the relative differences is lost. It's by far the most informative visual on the CPE that we have produced yet, but still leaves a lot wanting.
 
@@ -1008,13 +1018,14 @@ tf_idf_wordstack <- cpe_tfidf %>%
                   n_max = 20,
                   overlaps = 10) +
   scale_color_cpe +
-  labs(y = "Ranked by tf-idf", x = NULL) +
-  labs(subtitle = "Size is proportionate to term frequency-inverse document frequency")
+  labs(y = "Ranked by tf-idf", 
+       x = NULL,
+       subtitle = "Size is proportionate to term frequency-inverse document frequency")
 
 tf_idf_wordstack
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-42-1.svg" width="768" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-43-1.svg" width="768" />
 
 ## Using one document to explore the others: measures of keyness and wordscore models
 
@@ -1099,7 +1110,7 @@ The negative left side of the plot, filled in gray, shows the *least* key terms 
 capitals_keyplots[[1]]
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-46-1.svg" width="960" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-47-1.svg" width="960" />
 
 ##### Capital Volume II
 
@@ -1116,7 +1127,7 @@ On the negative effect strength side, the least key words, we can see that, as i
 capitals_keyplots[[2]]
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-47-1.svg" width="960" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-48-1.svg" width="960" />
 
 ##### Capital Volume III
 
@@ -1131,7 +1142,7 @@ On the grey side, we can see that Volume III involves less discussion of the act
 capitals_keyplots[[3]]
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-48-1.svg" width="960" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-49-1.svg" width="960" />
 
 If I had to boil down this keyness analysis into one more meaningful take away, it would be this: **we can't get everything we need to understand the critique of capitalism in just one volume of Capital**. Based on the charts above, it appears that Volume I contains information on capitalist production, II on the exchange and circulation of capital, and III on profit and the reproduction of the system as a whole. 
 
@@ -1176,7 +1187,7 @@ textplot_scale1d(capital_fish) +
   labs(subtitle = "Wordfish model: Estimated document 'perspective' on political economy (theta)")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-50-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-51-1.svg" width="672" />
 
 ### Plotting the most distinguishing words in a Wordfish model
 
@@ -1245,7 +1256,7 @@ capital_fish_plot <- capital_fish.coef %>%
 capital_fish_plot
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-52-1.svg" width="768" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-53-1.svg" width="768" />
 
 It looks like the left end of the CPE Wordfish scale is more labour and production (Volume I), while the right end of the scale deals with credit, rent, and profit (Volume III). In the middle of the scale are "neutral" terms that are about as likely to appear in the discussion of either topic - production of surplus value or realization of monetary profit. This chart is pretty close to a representation of the three keyness plots, but all together in two dimensions. Notice as well that the higher a term's baseline frequency (psi), the less drawn toward either end of the scale they are.
 
@@ -1363,7 +1374,7 @@ keys_wordstacks <- keys_assoc %>%
 keys_wordstacks
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-59-1.svg" width="960" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-60-1.svg" width="960" />
 
 Now that is quite a lot of detail! Too much to summarize in a paragraph or two. This is just the start with this type of analysis. The wordstack format can involve longer columns with fewer terms to get a more detailed view of the terms surrounding the keywords.
 
@@ -1386,7 +1397,7 @@ keys_assoc %>%
   labs(y = "Ranked by keyness", subtitle = "Terms ranked and size weighted by keyness statistic (chi²)")
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-60-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-61-1.svg" width="672" />
 
 ### Zooming in on Keywords in Context
 
@@ -1741,7 +1752,7 @@ kwic_value <- textplot_xray(kwic(cpe_tokens_withstop, pattern = "use_value|excha
 kwic_value
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-64-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-65-1.svg" width="672" />
 
 To a plot faceted by many keywords at once, just pass multiple `kwic` objects to the plotting function. This last one is based on what we **didn't** find in any of the text analysis on the CPE corpus. Marx left us a scant few writings on what a communist society would be like or how to accomplish rearranging society in such a way; the little bit he did leave us, though, have great value. Unfortunately, in the CC, you won't find any reference to the political and economic aims of Communism. It's possible, with a thorough understanding of the CPE, to infer some things about an alternative society from the critique of capitalism. It's an exciting area of research that is more relavent than ever, so I hope to expand on it with some more text analysis in the future.
 
@@ -1759,6 +1770,6 @@ kwic_rev_plot <-
 kwic_rev_plot
 ```
 
-<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-65-1.svg" width="672" />
+<img src="{{< blogdown/postref >}}index_files/figure-html/unnamed-chunk-66-1.svg" width="672" />
 
 

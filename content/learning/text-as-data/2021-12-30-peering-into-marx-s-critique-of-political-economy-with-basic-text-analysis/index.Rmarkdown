@@ -38,7 +38,8 @@ pacman::p_load(tidyverse,
                quanteda,
                quanteda.textstats,
                quanteda.textplots,
-               quanteda.textmodels
+               quanteda.textmodels,
+               tidytext
 )
 
 write_rds(sessioninfo::package_info(), here("content", "learning", "text-as-data", 
@@ -719,6 +720,8 @@ ds4cs_wordstack <- function(df, ..., x = docfreq, group = group, n_max = 20, ove
   facet_wrap(vars({{group}}), nrow = 1, scales = "free_x") +
   theme_ds4cs() +
   theme(axis.text = element_blank(),
+        plot.title = element_text(size = 18),
+        plot.subtitle = element_text(size = 16),
         panel.grid.major.y = element_blank(),
         strip.text = element_text(size = 16, hjust = 0.5),
         plot.margin = margin(r = 10, unit = "mm")) +
@@ -728,11 +731,12 @@ ds4cs_wordstack <- function(df, ..., x = docfreq, group = group, n_max = 20, ove
 
 The word stack places words in rank ordered columns of text, which are usually faceted out by variable levels. Visualization researchers have done some [empirical work](https://people.ischool.berkeley.edu/~hearst/papers/HearstWordzonesTVCG.pdf) showing that both column-based layouts and spatial faceting improve the reader's perception and understanding compared to standard word clouds. I plan to refine the function for the visuals eventually, but you can see the basic form below. The text size is still weighted by another variable, which is for this chart the word's normalized proportion of the book's total text.
 
-```{r}
+```{r, fig.width=8}
 freq_wordstack <- grouped_freq %>% 
   ds4cs_wordstack(y = rank, size = p, label = feature, color = group) +
   scale_color_cpe +
-  labs(y = "Ranked by % of total words used", subtitle = "Size proportionate to term's % of book's total word count")
+  labs(y = "Ranked by % of total words used", 
+       subtitle = "Size proportionate to term's % of book's total word count")
 
 freq_wordstack
 ```
@@ -749,8 +753,9 @@ tf_idf_wordstack <- cpe_tfidf %>%
                   n_max = 20,
                   overlaps = 10) +
   scale_color_cpe +
-  labs(y = "Ranked by tf-idf", x = NULL) +
-  labs(subtitle = "Size is proportionate to term frequency-inverse document frequency")
+  labs(y = "Ranked by tf-idf", 
+       x = NULL,
+       subtitle = "Size is proportionate to term frequency-inverse document frequency")
 
 tf_idf_wordstack
 ```

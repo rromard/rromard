@@ -12,11 +12,11 @@ As I learn more about text-based data science, this course will be updated over 
 
 ### Unit 1: Tidy Text Scraping, Cleaning and Processing with Karl Marx and R
 
-Learn about tidy methods of scraping, cleaning, and processing text data using the `tidytext` package. In the first unit, learn how to gather and prepare a corpus of machine readable text using all three volumes of Karl Marx's Capital. Tidy text scraping methods are demonstrated for three of the most common forms that text data can be found in: html text from web pages, PDF files, and MS Word documents. Before concluding, some very basic uses of tidy text data are shown like computing summary statistics or visualization with `ggplot2()`.
+Learn about tidy methods of scraping, cleaning, and processing text data using the `tidytext` package. In the first unit, find out how to gather and prepare a corpus of machine readable text using all three volumes of Karl Marx's Capital. Tidy text scraping methods are demonstrated for three of the most common forms that text data can be found in: html text from web pages, PDF files, and MS Word documents. Before concluding, some very basic uses of tidy text data are shown like computing summary statistics or visualization with `ggplot2()`.
 
 ### Unit 2: Peering into Marx's Critique of Political Economy with Text Analysis using Quanteda
 
-**COMING SOON**
+Learn how to use the powerful `quanteda` ecosystem of packages to conduct text analysis on all three volumes of Karl Marx's Capital. Topics covered in this unit include processing, cleaning and preparing text-data for use with `quanteda` and analyzing text using frequency-based methods, term-frequency inverse document frequency or tf-idf, statistical key word measures, word scaling models, and finding the local context for key words. The unit also covers many of the visualization options offered by the `quanteda.textplots` extension. 
 
 ### Unit 3: Structural Topic Modeling on the (mostly) Collected Works of Marx and Engels with R
 
