@@ -6,7 +6,7 @@ theme: "starter-academic"
 
 title: DS4CS # Website name
 baseurl: 'https://ds4cs.netlify.app/' # Website URL
-copyright: '© {year} Ryan Romard' # Footer text, e.g. '© {year} Me'
+copyright: '© {year} DS4CS' # Footer text, e.g. '© {year} Me'
 
 ############################
 ## LANGUAGE
