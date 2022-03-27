@@ -2,7 +2,7 @@
 title: Structural Topic Modeling on the (mostly) Collected Works of Marx and Engels
   with R
 author: "Ryan Romard"
-date: '2021-12-15'
+date: '2022-03-26'
 slug: the-power-of-text-as-data-topic-modeling-on-the-mostly-collected-works-of-marx-and-engels
 categories: []
 tags:
@@ -12,7 +12,7 @@ tags:
 subtitle: A practical introduction to topic modeling for citizen-socialist data scientists
 summary: ''
 authors: []
-lastmod: '2021-12-15T00:32:54-05:00'
+lastmod: '2022-03-26T00:32:54-05:00'
 featured: no
 image:
   caption: ''
@@ -223,7 +223,7 @@ Model co-variates, once supplied with the `data` argument, are set up using form
 
 The number of topics to include in the model is specified wtih the `K` argument. Choosing the number of topics is likely the most important input from the user in terms of shaping the outcome of the model. Unfortunately, the "best" number of topics to use cannot be known beforehand, which is why topic modeling is considered an [unsupervised form](https://www.ibm.com/cloud/learn/unsupervised-learning) of machine learning.
 
-In this case, we are going with `K = 50` topics, using the formula `~ author + year` to specify our model covariates, and providing the tibble of metadata to the `data` argument. The authors of the paper recommend using spectral decomposition as the initialization type for best results. Note that we aren't setting a seed with `set.seed()` because according to the package documentation, this form of initialization is deterministic and will produce a stable set of topics with the same data, number of topics, covariates, and paramater tunings. 
+In this case, we are going with `K = 50` topics, using the formula `~ author + year` to specify our model covariates, and providing the tibble of metadata to the `data` argument. The authors of the paper recommend using spectral decomposition as the initialization type for best results. Note that we aren't setting a seed with `set.seed()` because according to the package documentation, this form of initialization is deterministic and will produce a stable set of topics with the same data, number of topics, covariates, and parameter tuning. 
 
 {{< callout note >}}
 If `stm` is run with `K=0` and spectral initialization, it uses an algorithm created by the authors of [this book chapter](https://mimno.infosci.cornell.edu/papers/2014_book_chapter_care_and_feeding.pdf) to determine a number of topics for the user. It doesn't usually give an ideal number of topics, it does often provide a useful starting point for choosing the number of topics.
@@ -737,6 +737,7 @@ gamma_auth <- stm_gamma %>%
 
 gamma_auth
 ```
+
 To associate metadata with terms related to topics, the tidy gamma matrix can be joined to the tidy beta matrix by topic. Once they're together, it's easy to create visualizations that go far beyond what base R plotting with `stm` methods are capable of creating. Below, the top topics for each author are plotted by average document-topic probability (gamma) and colored by the topic discipline category. It appears to lend more credence to the regression finding
 
 ![](gamma_auth_lolli.png)
