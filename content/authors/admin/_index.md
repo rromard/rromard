@@ -14,7 +14,7 @@ social:
   label: Follow me on Twitter
   link: https://twitter.com/DataStruggle
 superuser: true
-title: Data Science for Class Struggle
+title: Ryan Romard
 ---
 
 Data science can be defined as a multidisciplinary approach to producing insight and solving problems combining statistics, computer science and programming, domain-based knowledge, and data-driven storytelling. Applied at scale to capitalist business use-cases [by multinational corporations](https://www.worldcat.org/title/peoples-republic-of-walmart-how-the-worlds-biggest-corporations-are-laying-the-foundation-for-socialism/oclc/1060586318), data science has produced highly sophisticated, globally integrated systems of real-time planning, organization, and exploitation as exemplified by Amazon or Walmart.  

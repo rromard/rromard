@@ -64,6 +64,16 @@ blogdown::new_post(title = "Canadian Fossil-Capitalism's Climate Contradictions 
                    ext = '.Rmarkdown', 
                    subdir = "post")
 
+# Post 8: The power of text as data: Topic modeling on the (mostly) collected works of Marx and Engels
+# blogdown::new_post(title = "The power of text as data: Topic modeling on the (mostly) collected works of Marx and Engels", 
+#                    ext = '.Rmarkdown', 
+#                    subdir = "post")
+
+# Post 8: The power of text as data: Topic modeling on the (mostly) collected works of Marx and Engels
+blogdown::new_post(title = "Hands on the levers of power: A topic model of Canada's National Lobbying Registry", 
+                   ext = '.Rmarkdown', 
+                   subdir = "post")
+
 ##### Learning posts
 
 # Lesson 1: Data Wrangling: Checking in on the CEWS
