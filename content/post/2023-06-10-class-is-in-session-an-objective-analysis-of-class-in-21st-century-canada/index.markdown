@@ -3,7 +3,7 @@ title: '(Social) Class is in Session: Clear thinking about class and capitalism'
 subtitle: 'Part I: The Marxist antidote to conventionally confused class thinking'
 author: Ryan Romard
 date: '2024-02-13'
-slug: class-is-in-session-clear-thinking-about-social_class-capitalism
+slug: class-is-in-session-clear-thinking-about-social-class
 categories: []
 tags: []
 summary: 'We don’t talk very much about class anymore, and when we do, the discourse is often very confused. This is an introductory post to a series on objective and data-driven class analysis, giving an overview of the mainstream (liberal) version of class and its counterpart of Marxist class analysis.'
