@@ -1,0 +1,125 @@
+---
+title: 'The Sorry State of Class Consciousness in Capitalist Canada'
+author: ''
+date: '2024-02-14'
+slug: the-state-of-class-consciousness-in-capitalist-canada
+categories: []
+tags: []
+subtitle: "Most people believe they are part of a mythical middle class that doesn't really exist"
+summary: 'Canada is a strong contender for the least class aware society on the planet. It’s stiff competition, but I think we have a good shot at the title. So what is the state of class consciousness in Canada? To find out, we’ll use survey data explore the subjective side of social class to see how most people think about class.'
+authors: []
+lastmod: '2024-02-14T16:05:41-05:00'
+featured: no
+image:
+  caption: 'Viewing the world through a distorted lens -- generated with Microsoft Copilot Image Creator'
+  focal_point: ''
+  preview_only: no
+projects: []
+output: html_document
+---
+
+Canada is a strong contender for the least class aware society on the planet. It's stiff competition, but I think we have a good shot at the title. We very rarely think, let alone talk about social class, which is virtually absent from mainstream discourse. According to the recent [Great Canadian Class Survey](https://angusreid.org/great-canadian-class-study/), only 7% of respondents thought social class was an important factor to individual success and seven out of out of ten felt little to no attachment to their class identity.
+
+So what is the state of class consciousness in Canada? To find out, we'll explore some survey data to get a baseline of how most people think about class in Canada. Today we are focused not on the objective, but the subjective side of social class. The subjective aspect of class encompasses **how people think about, understand and experience** the class structure of society and their place in it. Sometimes this subjective aspect accords well to social reality -- but as we shall see, more often it does not, a situation that has been described as [false consciousness](https://www.marxists.org/archive/marx/works/1893/letters/93_07_14.htm).
+
+There is a lot to dig into on the subjective side of class. For the time being, let's start with self-rated social class, often just called **subjective class** in the social sciences, meaning people's judgement of their *own position* in the class structure of society.
+
+### Measuring subjective social class with survey data
+
+Despite the lack of importance Canadian society places on class, many of the nation's major opinion polling firms have conducted survey research on the topic in recent years -- often framed by a sense of collective panic over [perceived middle class decline](https://www.pollara.com/middle-class-optimism-crashes-in-canada/). Pollsters have taken to directly asking people if they see themselves as middle class. Consistently, [seven](https://www.pollara.com/middle-class-optimism-crashes-in-canada/) or [eight](https://www.nanos.co/wp-content/uploads/2019/12/2019-1530-Globe-Nov-Populated-Report-with-Tabs.pdf) out of ten people say they believe they belong to the middle class. Of course, this pointed form of question practically primes people to place themselves in the middle class.
+
+Actually, nearly all mainstream discourse on class encourages people to think of themselves as middle class. The short version of prevailing class thinking in Canada is that a majority of people [believe they are middle class](https://www.edcan.ca/articles/class-matters/), that everyone around them is middle class, that we all live in a [middle class society](https://macleans.ca/economy/why-everyone-feels-like-theyre-in-the-middle-class/) where so-called [middle class values](https://macleans.ca/economy/why-everyone-feels-like-theyre-in-the-middle-class/) reign. [Class politics](https://www.tvo.org/article/is-200000-a-year-middle-class-the-ndp-seems-to-think-so) has been restricted almost entirely to [empty appeals](https://ici.radio-canada.ca/rci/en/news/2004894/can-the-trudeau-government-revive-its-old-middle-class-message) to the middle class, while much class analysis is reduced to [fretting over the maladies of the middle class](https://thewalrus.ca/livingrooms-how-to-save-the-middle-class/).
+
+In conventional models of class, we commonly see variations of the **low-middle-upper** scheme that basically deny the existence of the working class. In the 2016 cycle of the General Social Survey, where such a scheme is used, respondents nearly unanimously (95%) declared themselves to be middle class. Even among the lowest income earners in the country, nearly 90% of people thought they were in the middle class. Given the obvious negative connotation of *low class*, and the fact that almost nobody considers themselves to be *upper class*, people are naturally encouraged to see themselves as middle class.
+
+<div style="min-height:343px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/HnoB3/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/HnoB3/full.png" alt="" /></noscript></div>
+
+### Recognizing the working class makes a difference
+
+[Survey researchers](https://www.tandfonline.com/doi/epdf/10.1080/2474736X.2021.1978820?needAccess=true) have [long known](https://www.jstor.org/stable/2087554?origin=crossref&seq=5) that people can be prompted to judge their own class position -- and perhaps the nature of class in our society -- in different ways based on how the question is posed. When people are asked to rate their class position in an **open-ended** way, meaning they are free to answer in their own words, they tend to fall back onto dominant ideas about class by default. When asked in this manner, nearly everyone says they are in the middle class, while very few see themselves as with the working class on their own initiative -- commonly, people either [won't know their class position](https://www.jstor.org/stable/3341050) without prompting or outright deny the existence of social class.
+
+When people are asked about their own class position with a **closed** type of question, the response pattern changes substantially. In a closed question, rather than asking participants to answer freely, they are asked to place themselves on a pre-made class scale or hierarchy. Depending on how they are built, these class scales can prompt people to think about the class structure of society -- not something most people do often or ever -- in particular ways. When asked a closed question about their subjective social class, a smaller majority of people still think they are middle class. However, when the class scale includes the **working class** as a response option, a significant minority of people will consider themselves to be working class, rather than middle class.
+
+{{< callout note >}}
+
+**Open-ended versus closed questions about subjective social class**<br>
+
+**Open-ended:** What do you think are the social classes that divide society? Which one do you think you belong to?<br>
+
+**Closed:** People often say society is divided up into the following social classes: lower class, working class, middle class, and upper class. Which one do you think you belong to?
+
+{{< /callout >}}
+
+The chart below shows the results of a series of experimental surveys comparing the differences in response patterns between closed and open-ended questions about subjective social class. Participants were **nearly 2.5 times more likely** to say they were part of the working class when they were prompted with a class scale that allowed them to choose between working and middle class. Just acknowledging the existence of the working class -- not something that happens very often -- and suggesting that one could be a part of it, prompts people to think differently about their class position.
+
+<div style="min-height:323px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/28ymf/embed.js?v=1" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/28ymf/full.png" alt="" /></noscript></div>
+
+<br>
+
+In the following chart, we can see the collected results of surveys on social class conducted in more recent years, which also gave respondents an option of saying they are working class. As expected, a majority of respondents to each survey rated themselves as middle class. Yet if given the option, a sizable minority of people in Canada will rate themselves as working class -- whatever that means to them. Several polls have found that a third (33%) or more of respondents thought that they were in the working class, while others found a much lower rate of working class self-ID, at under one-fifth (20%) of the population.
+
+Most likely, the cause of this discrepancy in subjective class is the scale offered by the latter surveys, which split the middle class up into multiple parts. Putting a "lower" bound on the middle class makes the distinction between the working and middle class even more porous. In such cases, many who might otherwise view themselves as working class are invited to consider themselves lower middle class instead. In effect, working class and middle class subjective class positions have a negative relationship, meaning when one goes up, the other goes down -- at least when considering a closed class scale where respondents can only give a single answer.
+
+<div style="min-height:377px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/64Jx2/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/64Jx2/full.png" alt="" /></noscript></div>
+
+<br>
+
+We can view the negative relationship between the two class positions unfolding over time in the results of the World Values Survey, which shows a marked decline in working class identification over time, from a little under one-third (30.8%) in 2000 down to less than one-fifth of the population (19%) by 2020. As we can see in the chart, the share of people that consider themselves lower-middle class has grown considerably and mainly at the expense of the working class share. This the powerful role middle class thought plays in service of the status quo, crowding out working class consciousness like weeds in an ideological garden.
+
+<div style="min-height:403px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/k1pqq/embed.js?v=4" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/k1pqq/full.png" alt="" /></noscript></div>
+
+### Income, education, occupation, and subjective class
+
+Conventionally, class is treated as some function of income, education, and occupation. These things don't constitute social class, but do clearly influence how people think about class and their own class position. We can use microdata from the World Values Survey to explore how these variables impact subjective social class.
+
+Virtually nobody willingly identifies as "upper" class. In the latest WVS wave, only about 1% of the population did so, about one-tenth of people at the top of the income distribution. Nearly all of Canada's top income earners however, which probably includes [some small-time millionaires](https://www.cnbc.com/2023/11/10/survey-31percent-of-millionaires-say-they-are-part-of-the-middle-class.html) as it does the the South, say they are part of the middle class, specifically the "upper" middle class. There is a well known tendency studied by psychologists and sociologists for wealthy people to [underestimate](https://journals.sagepub.com/doi/full/10.1177/0038038520982225) and [downplay](https://research.chicagobooth.edu/-/media/research/cdr/docs/phillipslowery_aintnofortunateone) their relative class position and advantages. This is another ideological function of conventional class thinking -- blurring class distinctions at the top, not just the bottom, of the class hierarchy. Really, the aim is to erase the dividing lines of class entirely.
+
+If there is one group of people in the country that overwhelmingly **do not** see themselves as middle class, it is low-wage workers and those with low incomes in general.[^1] In the bottom 30% of the income distribution, only three in ten people see themselves as middle class and are equally likely to view themselves as either working or lower class. Since there is no accepted definition of the lower class, it isn't clear, from this data at least, why so many of those people would view themselves as being separate from the working class.
+
+[^1]: Note the difference with the results of the 2016 General Social Survey, where nearly all respondents considered themselves to be middle class regardless of income. By introducing working class as a response category, participants no longer face a binary choice between being either lower or middle class. It's likely that this change had some impact in prompting people with low incomes to consider their class position in a very different way.
+
+<div style="min-height:433px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/36Bwm/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/36Bwm/full.png" alt="" /></noscript></div>
+
+<br>
+
+The relationship between people's self-rated class position and education level was weaker than with income. Respondents were less likely to rate themselves as working class as education rose, but a majority of people across all levels of education still believed that they were in the middle class.
+
+Workers in service, "semi-skilled" and "unskilled" occupations were much more likely than most to say that they were part of the working class.[^2] Yet a majority of Canadian workers across all occupations saw themselves as part of the middle class, with the exception of unskilled workers, who are roughly split down the middle. Unsurprisingly, those in higher management, professional, and technical occupations were especially unlikely to view themselves as working class.
+
+[^2]: For now, we'll bypass the (mostly online) controversy over these categories and category of "skill" as it relates to exploitation of labour and formation of wages under capitalism.
+
+<div style="min-height:535px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/vDuDs/embed.js?v=3" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/vDuDs/full.png" alt="" /></noscript></div>
+
+<br>
+
+There are a few interesting findings related to employment status as well. A majority of people self-rated in the middle class regardless of employment status with the exception of the unemployed. The closer one gets to being a full-time employee, the lower the likelihood of self-rating as working class. Part-time workers and students rated themselves as working class a bit more than average. Both the unemployed, as well as "homemakers" that provide unpaid domestic labour, displayed a much stronger affinity to the working class than most employed workers -- make of it what you will.
+
+<div style="min-height:446px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/Z5F8n/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/Z5F8n/full.png" alt="" /></noscript></div>
+
+### Viewing the world through a distorted lens
+
+While we are only discussing survey responses here, these findings strongly suggest that people's thinking about class in general can be quite malleable ([p. 63](https://www-2.rotman.utoronto.ca/facbios/file/ROBSocialClass.pdf)) and often contradictory. Consider the results of this [Pollara survey](https://www.pollara.com/wp-content/uploads/2023/12/Middle-Class-Identity-Release-Dec-2023-1.pdf) which found that a majority of respondents (people could agree or disagree with multiple statements) said that **both** middle class (78%) **and** working class (63%) accurately described their "social and financial position of society." It is as though most working class people, in terms of their subjective social class, have one foot in reality, and another in the mythical and ethereal realm of the middle class. They can be prompted by any number of factors, probably far beyond the context of survey research, to reconsider their class position in either way.
+
+As we conventionally understand it, the "middle class" is an [ideological construction of capitalist society](https://murraysmithorg.files.wordpress.com/2017/08/rethinking.pdf) -- **a lens that distorts the view of social reality** -- so it is by [design a vague and diffuse concept](https://www.cbc.ca/radio/checkup/it-basically-means-nothing-why-some-economists-are-skeptical-of-the-term-middle-class-1.5258989), offering a little bit of something and seat at the table to just about everyone. While most people agree that being middle class is "mostly" a function of income ([p. 13](https://www.ekospolitics.com/wp-content/uploads/understanding_the_middle_class_final_report.pdf)), they also place strong importance on things that make them *feel* middle class like having a comfortable lifestyle, feeling financially secure, or believing that one will be rewarded for hard work ([p. 14](https://www.ekospolitics.com/wp-content/uploads/understanding_the_middle_class_final_report.pdf)). Many of the signposts guiding people to the middle class on a "gut level" ([p. 10](https://www.pollara.com/wp-content/uploads/2020/12/Pollara-MiddleClass_W6-RptF1.pdf)) are vague, non-specific, highly subjective, often contradictory individual feelings and notions.
+
+Supposedly objective measures of social class fare no better. Across one dozen commonly used income-based definitions of middle class over [90% of households in the US](https://www.brookings.edu/articles/a-dozen-ways-to-be-middle-class/) could be classified as such on at least one. The same could of course be said of Canada. When participants in a [Quebec study on social class (p. 128)](https://cffp.recherche.usherbrooke.ca/wp-content/uploads/2020/02/chapitre_lg_never-too-rich-to-middle-class.pdf) were asked what they thought the minimum level of income that grants entry into the middle class was, the resounding answer was essentially "incomes that are close to my income," regardless of how much their income actually was. In terms of income, people often take middle class to be average and in turn, based on based on the people they know and encounter on a daily basis, also judge themselves to be average and therefore in the middle class -- just like everyone else.
+
+So whether measured in objective or subjective terms, nobody really seems to agree on what middle class means, let alone what the criteria for entry and exit are. This is not evidence of a broken concept, this is ideology working as intended.
+
+### Canada's class (un)consciousness in international context
+
+Of all the countries included in the 7th cycle of the World Values Survey, from 2017 to 2020, there was nowhere that more of the population rated their own class position as middle class than in Canada. Compared to Canada, only in two countries in the world[^3] did a smaller portion of respondents say they were working class. In reality, the [majority of people in Canada, indeed the world](https://jacobin.com/2020/09/working-class-peoples-guide-capitalism-marxist-economics), are working class or undergoing [proletarianization](https://en.wikipedia.org/wiki/Proletarianization) (in the process of becoming working class). The middle class does exist, but it is a small minority of people that includes those that live on both labour and capital income (small time capitalists, some self-employed), and also some, but not all people like, managers, professionals, intellectuals, and very highly paid workers. That is **not** most people who believe they are middle class. The inevitable conclusion, which probably comes as a shock to no one, is that Canada is one of the least class conscious societies in the world.
+
+[^3]: The Philippines and Nigeria, two countries where surely the majority of the population are proletarians. In part, the low proportion of working class responses is related to the very high share of people (41%) self-rating as lower class in Nigeria and lower-middle class in the Philippines.
+
+<div style="min-height:942px"><script type="text/javascript" defer src="https://datawrapper.dwcdn.net/kaTs7/embed.js?v=2" charset="utf-8"></script><noscript><img src="https://datawrapper.dwcdn.net/kaTs7/full.png" alt="" /></noscript></div>
+
+<br>
+
+### Why is class consciousness in Canada so far gone?
+
+One could write a dozen dissertations and only scratch the surface. But there is time to briefly touch on a few points. First up, is that the ideological construct of the middle class has a deep connection to the [dominant ideology of liberalism](file:///C:/Users/Ryan/Downloads/21818-capitalism-as-the-bride-of-liberalism-how-philosophy-impacted-economic-thought.pdf) that pervades daily life under capitalism. So the omnipresence of middle class thinking reflects the strength of capitalist ideological domination over Canadian society -- which is to say very strong.
+
+Beyond that, [sociologists](https://onlinelibrary.wiley.com/doi/full/10.1111/cars.12444) and [historians](https://www.lltjournal.ca/index.php/llt/article/download/5955/6847?inline=1) have connected the low and contradictory state of working class consciousness to Canada's historical development -- and current structure -- as a settler-capitalist state based on [white supremacy](https://www.cambridge.org/core/journals/canadian-journal-of-political-science-revue-canadienne-de-science-politique/article/politics-of-white-identity-and-settlers-indigenous-resentment-in-canada/9AF31274E53E2405A1589DB4293EF568). Further, in the 20th century in Canada, there was actually a [deliberate campaign to promote "middle class values,"](https://networks.h-net.org/node/3449/reviews/27345/cameron-iacovetta-gatekeepers) especially among new immigrants, as some sort of Cold War inoculation against communism.
+
+As for changes since the start of the 21st century, there is a likely connection to home ownership in the bubble era. Typically, a home is the only asset of value any working class person will ever own. Increasingly, homeowners are pushed to treat homes as financial assets, tapping their home equity for [billions of dollars in credit and loans](https://betterdwelling.com/canadian-home-equity-loans-surged-after-regulator-warnings/). This has, possibly, produced a type of pseudo-[entrepreneurial](https://yorkspace.library.yorku.ca/server/api/core/bitstreams/b17bb6b4-b013-4c3e-bba7-95a3833b091c/content) orientation among many homeowners to the asset value of their own homes which dovetails easily into the dominant middle class ideology.
